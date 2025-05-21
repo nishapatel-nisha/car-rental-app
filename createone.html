@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Car Rental Pricing</title>
+  <link rel="stylesheet" href="css-style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background: #f4f4f4;
+    }
+  .hero-section {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  background-image: url('Images/t.jpg');
+  background-size: 100% 100%; /* forces image to stretch without blur */
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: white;
+  padding-left: 50px;
+}
+    .hero-content h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+    .hero-content p {
+      font-size: 18px;
+    }
+    .container, .plan-section {
+      max-width: 900px;
+      background: white;
+      padding: 30px;
+      margin: 40px auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .addons-container {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      margin-top: 30px;
+    }
+    .addon-box {
+      text-align: center;
+      background: #f9f9f9;
+      padding: 20px;
+      border-radius: 10px;
+      width: 180px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    .addon-box img {
+      width: 60px;
+      margin-bottom: 10px;
+    }
+    .addon-box label {
+      font-size: 16px;
+      display: block;
+    }
+    .plan-box {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      margin-top: 20px;
+    }
+    .plan-option {
+      flex: 1;
+      background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+      border: 1px solid #ddd;
+      padding: 30px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      transition: 0.3s ease;
+      max-width: 350px;
+    }
+    .plan-option:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+    .plan-option h3 {
+      font-size: 24px;
+      margin-bottom: 15px;
+      color: #222;
+    }
+    .plan-option p {
+      font-size: 16px;
+      color: #666;
+      margin-bottom: 12px;
+    }
+    .plan-option strong {
+      font-size: 20px;
+      color: #007BFF;
+    }
+    .price-range {
+      font-size: 14px;
+      margin-top: 10px;
+      color: #999;
+    }
+    form h2 {
+  text-align: center;
+  color: #3c2b84;
+}
+
+  </style>
+</head>
+<header>
+    <div class="navbar ">
+      <img src="Images/logo.png" alt="Logo" id="logo" onclick="window.location.href='index.html'">
+      <nav class="main-nav">
+      </nav>
+    </div>
+  </header>
+<body>
+       
+
+   <section>
+  <form onsubmit="showRegisterSuccess(event)" id="register-form" style="max-width: 400px; background: white; padding: 40px; margin: 50px auto; border-radius: 16px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);">
+    <h2 style="text-align:center; color:#3c2b84;">Create Account</h2>
+
+    <input type="text" id="fullname" placeholder="Full Name" required style="width: 100%; padding: 14px; margin: 10px 0; border: 1px solid #ccc; border-radius: 8px; font-size: 15px;">
+    <input type="email" id="email" placeholder="Email" required style="width: 100%; padding: 14px; margin: 10px 0; border: 1px solid #ccc; border-radius: 8px; font-size: 15px;">
+    <input type="password" id="password" placeholder="Password" required style="width: 100%; padding: 14px; margin: 10px 0; border: 1px solid #ccc; border-radius: 8px; font-size: 15px;">
+    <input type="password" id="confirm-password" placeholder="Confirm Password" required style="width: 100%; padding: 14px; margin: 10px 0; border: 1px solid #ccc; border-radius: 8px; font-size: 15px;">
+
+    <!-- Error Message -->
+    <div id="error-message" style="display:none; color:red; font-size: 14px; text-align: center; margin-top: 10px;">
+      ❌ Passwords do not match.
+    </div>
+
+    <!-- Success Message -->
+    <div id="register-success" style="display:none; text-align:center; margin-top:20px; color:green; font-weight:bold;">
+      ✅ Account created successfully!
+    </div>
+
+    <button type="submit" style="
+      display: block;
+      margin: 20px auto;
+      background-color:#f1c40f;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+    ">Sign Up</button>
+
+    <div style="text-align: center; margin-top: 20px;">
+      <p>Already have an account? 
+        <a href="login.html" style="color: #3c2b84; font-weight: bold;">Login</a>
+      </p>
+    </div>
+  </form>
+</section>
+
+<script>
+  function showRegisterSuccess(event) {
+    event.preventDefault();
+
+    // Get form values
+    const password = document.getElementById("password").value.trim();
+    const confirmPassword = document.getElementById("confirm-password").value.trim();
+    const successMsg = document.getElementById("register-success");
+    const errorMsg = document.getElementById("error-message");
+
+    // Reset visibility
+    successMsg.style.display = "none";
+    errorMsg.style.display = "none";
+
+    // Check if passwords match
+    if (password !== confirmPassword) {
+      errorMsg.style.display = "block";
+      return;
+    }
+
+    // If valid
+    successMsg.style.display = "block";
+    document.getElementById("register-form").reset();
+  }
+</script>
+
+
+  </div>
+  <footer style="text-align: center; padding: 30px 0; background-color: #222; color: white;">
+  <p>&copy; 2025 CarRental. All rights reserved. | Powered by AJAX & JSON</p>
+</footer>
+ 
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Before You Book - Help</title>
+  <link rel="stylesheet" href="css-style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f7f7f7;
+      margin: 0;
+      padding: 40px;
+      color: #333;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+    }
+
+    h1 {
+      text-align: center;
+      color: #ead1ef;
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      color: #3b2e75;
+      margin-top: 30px;
+    }
+
+    p {
+      line-height: 1.7;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+    }
+
+    .note {
+      background: #fdf0f7;
+      padding: 15px;
+      border-left: 4px solid #dea9ea;
+      margin-top: 20px;
+      font-style: italic;
+    }
+    .faq-container {
+  margin-top: 30px;
+}
+
+.faq-container details {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+}
+
+.faq-container summary {
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 16px;
+  color: #3b2e75;
+}
+
+.faq-container p {
+  margin-top: 10px;
+  line-height: 1.6;
+}
+
+  </style>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+          <img src="Images/logo.png" alt="Logo" id="logo" onclick="window.location.href='index.html'">
+          <nav class="main-nav">
+            <ul>
+              <li><a href="Pricing.html">Pricing</a></li>
+              <li style="position: relative;">
+                <a href="Cars.html">Cars</a>
+                <div class="submenu-gallery">
+                   <!-- Small Cars block -->
+        <div style="text-align: center;">
+          <img src="Images/smallcars.png" alt="Small Cars" style="width: 140px; height: 90px;">
+          <p style="margin: 5px 0 0; font-size: 14px; color: #333;">Small Cars</p>
+        </div>
+                  <div style="text-align: center;">
+                    <img src="Images/Ecars.png" alt="Ecars" style="width: 140px; height: 90px;">
+                    <p style="margin: 5px 0 0; font-size: 14px; color: #333;">Electice cars</p>
+                  </div>
+                  <div style="text-align: center;">
+                    <img src="Images/SUVcars.png" alt="SUVcars: style="width: 140px; height: 90px;">
+                    <p style="margin: 5px 0 0; font-size: 14px; color: #333;">SUV cars</p>
+                  </div>
+                  <div style="text-align: center;">
+                    <img src="Images/Hybridecars.png" alt="Hybridecars: style="width: 140px; height: 90px;" >
+                    <p style="margin: 5px 0 0; font-size: 14px; color: #333;">Hybrid Cars</p>
+                  </div>
+                </div>
+              </li>
+              
+              <li><a href="Vans.html"  class="active">Vans</a>
+                <div class="submenu-gallery">
+                  <!-- Small Cars block -->
+       <div style="text-align: center;">
+         <img src="Images/1v.png" alt="Small Cars" style="width: 140px; height: 90px;">
+         <p style="margin: 5px 0 0; font-size: 14px; color: #333;">Car Derived vans</p>
+       </div>
+                 <div style="text-align: center;">
+                   <img src="Images/2v.png" alt="Ecars" style="width: 140px; height: 90px;">
+                   <p style="margin: 5px 0 0; font-size: 14px; color: #333;">Small vans</p>
+                 </div>
+                 <div style="text-align: center;">
+                   <img src="Images/3v.png" alt="SUVcars: style="width: 140px; height: 90px;">
+                   <p style="margin: 5px 0 0; font-size: 14px; color: #333;">Medium vans</p>
+                 </div>
+                 <div style="text-align: center;">
+                   <img src="Images/4v.png" alt="Hybridecars: style="width: 140px; height: 90px;" >
+                   <p style="margin: 5px 0 0; font-size: 14px; color: #333;">Large vans</p>
+                 </div>
+                 <div style="text-align: center;">
+                  <img src="Images/5v.png" alt="Hybridecars: style="width: 140px; height: 90px;" >
+                  <p style="margin: 5px 0 0; font-size: 14px; color: #333;">Crew Vans & 9 Seaters</p>
+                </div>
+               </div>
+               </li>
+              <li><a href="help.html">Help</a></li>
+              <li><a href="more.html">More</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="login.html">Login</a></li>
+              <li><a href="applynow.html" class="cta-button">Apply Now</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+  <!-- ✅ Hero Section with Left-Aligned Text on Top of Image -->
+<div style="position: relative; width: 100%; height: 300px; background-image: url('Images/H2.2.jpg'); background-size: cover; background-position: center;">
+    <div style="
+      position: absolute;
+      top: 50%;
+      left: 40px;
+      transform: translateY(-50%);
+      color: white;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 25px 30px;
+      border-radius: 10px;
+      max-width: 500px;
+    ">
+      <p style="margin: 0; font-size: 16px; opacity: 0.9;">Help</p>
+      <h1 style="margin: 10px 0; font-size: 32px;">Ahead of your trip</h1>
+      <p style="margin: 0; font-size: 18px;">Answering your questions about
+        preparing for your trip and picking up your vehicle</p>
+      <!-- ✅ Search Bar -->
+    <input type="text" id="faqSearch" placeholder="Search topics..." style="
+    width: 100%;
+    padding: 10px 15px;
+    border-radius: 6px;
+    border: none;
+    font-size: 16px;
+    outline: none;
+  ">
+    </div>
+    
+  </div>
+  
+  <h2>Frequently Asked Questions</h2>
+
+  <div class="faq-container">
+    <details>
+      <summary>How can I make changes to my reservation?</summary>
+      <p>You can make changes to your reservation by calling our Australian office or emailing info@gorentals.com.au for support.</p>
+    </details>
+  
+    <details>
+      <summary>What will I need to bring when I collect my hire car?</summary>
+      <p>Please bring a valid driver’s licence and a credit/debit card. A credit card is required if you selected the Basic insurance option. The card must have your name on it and be valid through your rental period.</p>
+    </details>
+  
+    <details>
+      <summary>If I pick up my vehicle out of hours, what is the pick-up process?</summary>
+      <p>We’ll send you clear instructions and a damage check-sheet prior to your hire. Not all branches support after-hours pick-up — please call to confirm availability.</p>
+    </details>
+  
+    <details>
+      <summary>How do we arrange to get picked up by the airport shuttle once we arrive?</summary>
+      <p>You can request an airport shuttle via the GO Rentals App or by calling +61 (add local number).</p>
+    </details>
+  
+    <details>
+      <summary>Can I change the vehicle on my booking after I have booked?</summary>
+      <p>Yes, contact us to check availability and pricing for an upgrade. Call from Australia or email info@gorentals.com.au.</p>
+    </details>
+  
+    <details>
+      <summary>Can I add another driver to my booking when I come to pick up my rental?</summary>
+      <p>Yes. Additional drivers must meet the licence requirements and must be present with their licence to be added to the Rental Agreement.</p>
+    </details>
+  
+    <details>
+      <summary>I'm staying in a downtown hotel — will the shuttle pick me up?</summary>
+      <p>Currently, we do not offer hotel, Airbnb, or residential pickups from our city branches. Please call us for branch-specific shuttle info.</p>
+    </details>
+  
+    <details>
+      <summary>How long does it take to pick up and drop off a rental car with GO?</summary>
+      <p>The process is quick, especially if you've done online check-in. If not, allow extra time to complete documents and payment at the branch.</p>
+    </details>
+  
+    <details>
+      <summary>Can I change the pick-up and drop-off location on my booking?</summary>
+      <p>Yes. Contact us to check availability. Note that a one-way relocation fee may apply if locations differ.</p>
+    </details>
+  
+    <details>
+      <summary>If I cancel my hire after booking, what happens?</summary>
+      <p>If cancelled more than 24 hours in advance, only a 10% fee applies. Within 24 hours: 100% cancellation fee. A refund admin fee applies to prepaid bookings.</p>
+    </details>
+  
+    <details>
+      <summary>Can I change my insurance cover when I pick up my car?</summary>
+      <p>Yes. Our staff can assist with insurance upgrades when you collect the car. If you're arriving after-hours, changes must be made during online check-in.</p>
+    </details>
+  
+    <details>
+      <summary>How can I change my level of cover after I have booked?</summary>
+      <p>Contact our Reservations Team — you’ll find all contact details on our website or confirmation email.</p>
+    </details>
+  
+    <details>
+      <summary>Do I have to choose pre-paid fuel at pick-up?</summary>
+      <p>Yes, pre-paid fuel must be added during pick-up. Unfortunately, it cannot be added later once you’ve started your hire.</p>
+    </details>
+  
+    <details>
+      <summary>Is online check-in mandatory?</summary>
+      <p>It's highly recommended and mandatory for after-hours pick-ups. It speeds up the process during regular hours as well.</p>
+    </details>
+  
+    <details>
+      <summary>Are my details saved for future vehicle reservations?</summary>
+      <p>Online check-in does not save your details. Use the GO Rentals app to save your profile for future hires.</p>
+    </details>
+  
+    <details>
+      <summary>Do I still need to go to the counter?</summary>
+      <p>Yes, for key collection and signing documents. If you checked in online, the process will be much faster.</p>
+    </details>
+  </div>
+  
+  
+  </div>
+  <script>
+    const searchInput = document.getElementById('faqSearch');
+    const faqItems = document.querySelectorAll('.faq-container details');
+  
+    searchInput.addEventListener('input', function () {
+      const query = this.value.toLowerCase();
+  
+      faqItems.forEach(faq => {
+        const question = faq.querySelector('summary').innerText.toLowerCase();
+        if (question.includes(query)) {
+          faq.style.display = '';
+        } else {
+          faq.style.display = 'none';
+        }
+      });
+    });
+  </script>
+  
+</body>
+</html>

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Before You Book - Help</title>
+  <link rel="stylesheet" href="css-style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f7f7f7;
+      margin: 0;
+      padding: 40px;
+      color: #333;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+    }
+
+    h1 {
+      text-align: center;
+      color: #ead1ef;
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      color: #3b2e75;
+      margin-top: 30px;
+    }
+
+    p {
+      line-height: 1.7;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+    }
+
+    .note {
+      background: #fdf0f7;
+      padding: 15px;
+      border-left: 4px solid #dea9ea;
+      margin-top: 20px;
+      font-style: italic;
+    }
+    .faq-container {
+  margin-top: 30px;
+}
+
+.faq-container details {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+}
+
+.faq-container summary {
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 16px;
+  color: #3b2e75;
+}
+
+.faq-container p {
+  margin-top: 10px;
+  line-height: 1.6;
+}
+
+  </style>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+          <img src="Images/logo.png" alt="Logo" id="logo" onclick="window.location.href='index.html'">
+          <nav class="main-nav">
+            <ul>
+              <li><a href="Pricing.html">Pricing</a></li>
+              <li style="position: relative;">
+                <a href="Cars.html">Cars</a>
+                <div class="submenu-gallery">
+                   <!-- Small Cars block -->
+        <div style="text-align: center;">
+          <img src="Images/smallcars.png" alt="Small Cars" style="width: 140px; height: 90px;">
+          <p style="margin: 5px 0 0; font-size: 14px; color: #333;">Small Cars</p>
+        </div>
+                  <div style="text-align: center;">
+                    <img src="Images/Ecars.png" alt="Ecars" style="width: 140px; height: 90px;">
+                    <p style="margin: 5px 0 0; font-size: 14px; color: #333;">Electice cars</p>
+                  </div>
+                  <div style="text-align: center;">
+                    <img src="Images/SUVcars.png" alt="SUVcars: style="width: 140px; height: 90px;">
+                    <p style="margin: 5px 0 0; font-size: 14px; color: #333;">SUV cars</p>
+                  </div>
+                  <div style="text-align: center;">
+                    <img src="Images/Hybridecars.png" alt="Hybridecars: style="width: 140px; height: 90px;" >
+                    <p style="margin: 5px 0 0; font-size: 14px; color: #333;">Hybrid Cars</p>
+                  </div>
+                </div>
+              </li>
+              
+              <li><a href="Vans.html"  class="active">Vans</a>
+                <div class="submenu-gallery">
+                  <!-- Small Cars block -->
+       <div style="text-align: center;">
+         <img src="Images/1v.png" alt="Small Cars" style="width: 140px; height: 90px;">
+         <p style="margin: 5px 0 0; font-size: 14px; color: #333;">Car Derived vans</p>
+       </div>
+                 <div style="text-align: center;">
+                   <img src="Images/2v.png" alt="Ecars" style="width: 140px; height: 90px;">
+                   <p style="margin: 5px 0 0; font-size: 14px; color: #333;">Small vans</p>
+                 </div>
+                 <div style="text-align: center;">
+                   <img src="Images/3v.png" alt="SUVcars: style="width: 140px; height: 90px;">
+                   <p style="margin: 5px 0 0; font-size: 14px; color: #333;">Medium vans</p>
+                 </div>
+                 <div style="text-align: center;">
+                   <img src="Images/4v.png" alt="Hybridecars: style="width: 140px; height: 90px;" >
+                   <p style="margin: 5px 0 0; font-size: 14px; color: #333;">Large vans</p>
+                 </div>
+                 <div style="text-align: center;">
+                  <img src="Images/5v.png" alt="Hybridecars: style="width: 140px; height: 90px;" >
+                  <p style="margin: 5px 0 0; font-size: 14px; color: #333;">Crew Vans & 9 Seaters</p>
+                </div>
+               </div>
+               </li>
+              <li><a href="help.html">Help</a></li>
+              <li><a href="more.html">More</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="login.html">Login</a></li>
+              <li><a href="applynow.html" class="cta-button">Apply Now</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+  <!-- ✅ Hero Section with Left-Aligned Text on Top of Image -->
+<div style="position: relative; width: 100%; height: 300px; background-image: url('Images/h1.1.jpg'); background-size: cover; background-position: center;">
+    <div style="
+      position: absolute;
+      top: 50%;
+      left: 40px;
+      transform: translateY(-50%);
+      color: white;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 25px 30px;
+      border-radius: 10px;
+      max-width: 500px;
+    ">
+      <p style="margin: 0; font-size: 16px; opacity: 0.9;">Help</p>
+      <h1 style="margin: 10px 0; font-size: 32px;">Before you book</h1>
+      <p style="margin: 0; font-size: 18px;">Answering your questions about<br>booking, insurance, and payment</p>
+      <!-- ✅ Search Bar -->
+    <input type="text" id="faqSearch" placeholder="Search topics..." style="
+    width: 100%;
+    padding: 10px 15px;
+    border-radius: 6px;
+    border: none;
+    font-size: 16px;
+    outline: none;
+  ">
+    </div>
+    
+  </div>
+  
+
+  <h2>Frequently Asked Questions</h2>
+
+  <div class="faq-container">
+  
+    <details>
+      <summary>What happens if I lose the Key card?</summary>
+      <p>Contact us and we will get a spare card out to you. If you need to access the vehicle, we can do this remotely and enable driving for you to drive to your destination.</p>
+    </details>
+  
+    <details>
+      <summary>What do I do if I run out of battery?</summary>
+      <p>Please call a flat bed tow truck to tow the vehicle to a nearby charging station. On the Tesla in car screen, please enter transport mode which will allow you to move the vehicle. This can be found in the main menu under service.</p>
+    </details>
+  
+    <details>
+      <summary>Can I use the Tesla Supercharger network to charge the Tesla Model 3 and Tesla Model Y?</summary>
+      <p>Yes, Tesla Superchargers are available to GO Rentals customers. Use the built-in touch screen or <a href="#">click here</a> to locate the nearest Supercharger destination.</p>
+    </details>
+  
+    <details>
+      <summary>How will I be billed for using the Tesla Supercharging network?</summary>
+      <p>The cost will be billed to GO Rentals and passed on to you. We will charge your credit/debit card on file (non-refundable processing fee applies).</p>
+    </details>
+  
+    <details>
+      <summary>How much battery charge do I need to return the Tesla with?</summary>
+      <p>Please return the vehicle with at least 80% battery. If it's less, we will charge NZD$1.00 per kWh needed to restore it to 80%.</p>
+    </details>
+  
+    <details>
+      <summary>Where can I find the spare tyre?</summary>
+      <p>The Tesla Model 3 and Y do not have a spare tyre. Tesla Roadside Assistance may provide loaner wheels. Contact GO Rentals to report and confirm costs.</p>
+    </details>
+  
+    <details>
+      <summary>What happens if I need roadside assistance?</summary>
+      <p>You're covered by Tesla Roadside Assistance. Call 0800 005 431. Not all breakdowns are covered. <a href="#">Click here for details</a>.</p>
+    </details>
+  
+    <details>
+      <summary>Can I use the Tesla mobile app?</summary>
+      <p>No, the Tesla app does not work with rentals. Use the GO Rentals app instead to unlock, honk, locate the car, and more.</p>
+    </details>
+  
+    <details>
+      <summary>Can I use my mobile as a Phone key?</summary>
+      <p>No, phone key function is not available in rental Teslas.</p>
+    </details>
+  
+    <details>
+      <summary>Will I be billed for the mobile data usage in the Tesla?</summary>
+      <p>No, GO Rentals covers the cost of Tesla's premium connectivity during your rental.</p>
+    </details>
+  
+    <details>
+      <summary>Can I adjust the driving settings?</summary>
+      <p>We recommend default settings for best battery performance. Speak to a team member if you wish to change them.</p>
+    </details>
+  
+    <details>
+      <summary>What is Tesla Autopilot?</summary>
+      <p>Autopilot includes lane centering and traffic-aware cruise control. It requires active driver supervision. This is not Full Self Driving.</p>
+    </details>
+  
+    <details>
+      <summary>How do I activate Autopilot?</summary>
+      <p>In Model 3/Y, press the right control stalk down twice when Autopilot is ready.</p>
+    </details>
+  
+  </div>
+  
+  </div>
+  <script>
+    const searchInput = document.getElementById('faqSearch');
+    const faqItems = document.querySelectorAll('.faq-container details');
+  
+    searchInput.addEventListener('input', function () {
+      const query = this.value.toLowerCase();
+  
+      faqItems.forEach(faq => {
+        const question = faq.querySelector('summary').innerText.toLowerCase();
+        if (question.includes(query)) {
+          faq.style.display = '';
+        } else {
+          faq.style.display = 'none';
+        }
+      });
+    });
+  </script>
+  
+</body>
+</html>

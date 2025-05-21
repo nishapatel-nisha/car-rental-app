@@ -1,0 +1,680 @@
+<!-- car-rental-app/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Car Rental</title>
+  <link rel="stylesheet" href="css-style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <img src="Images/logo.png" alt="Logo" id="logo" onclick="window.location.href='index.html'">
+      <nav class="main-nav">
+        <ul>
+          <li><a href="Pricing.html">Pricing</a></li>
+          <li style="position: relative;">
+            <a href="Cars.html">Cars</a>
+            <div class="submenu-gallery">
+               <!-- Small Cars block -->
+    <div style="text-align: center;">
+      <img src="Images/smallcars.png" alt="Small Cars" style="width: 140px; height: 90px;">
+      <p style="margin: 5px 0 0; font-size: 14px; color: #333;">Small Cars</p>
+    </div>
+              <div style="text-align: center;">
+                <img src="Images/Ecars.png" alt="Ecars" style="width: 140px; height: 90px;">
+                <p style="margin: 5px 0 0; font-size: 14px; color: #333;">Electice cars</p>
+              </div>
+              <div style="text-align: center;">
+                <img src="Images/SUVcars.png" alt="SUVcars: style="width: 140px; height: 90px;">
+                <p style="margin: 5px 0 0; font-size: 14px; color: #333;">SUV cars</p>
+              </div>
+              <div style="text-align: center;">
+                <img src="Images/Hybridecars.png" alt="Hybridecars: style="width: 140px; height: 90px;" >
+                <p style="margin: 5px 0 0; font-size: 14px; color: #333;">Hybrid Cars</p>
+              </div>
+            </div>
+          </li>
+          
+          <li><a href="Vans.html"  class="active">Vans</a>
+            <div class="submenu-gallery">
+              <!-- Small Cars block -->
+   <div style="text-align: center;">
+     <img src="Images/1v.png" alt="Small Cars" style="width: 140px; height: 90px;">
+     <p style="margin: 5px 0 0; font-size: 14px; color: #333;">Car Derived vans</p>
+   </div>
+             <div style="text-align: center;">
+               <img src="Images/2v.png" alt="Ecars" style="width: 140px; height: 90px;">
+               <p style="margin: 5px 0 0; font-size: 14px; color: #333;">Small vans</p>
+             </div>
+             <div style="text-align: center;">
+               <img src="Images/3v.png" alt="SUVcars: style="width: 140px; height: 90px;">
+               <p style="margin: 5px 0 0; font-size: 14px; color: #333;">Medium vans</p>
+             </div>
+             <div style="text-align: center;">
+               <img src="Images/4v.png" alt="Hybridecars: style="width: 140px; height: 90px;" >
+               <p style="margin: 5px 0 0; font-size: 14px; color: #333;">Large vans</p>
+             </div>
+             <div style="text-align: center;">
+              <img src="Images/5v.png" alt="Hybridecars: style="width: 140px; height: 90px;" >
+              <p style="margin: 5px 0 0; font-size: 14px; color: #333;">Crew Vans & 9 Seaters</p>
+            </div>
+           </div>
+           </li>
+          <li><a href="help.html">Help</a></li>
+          <li><a href="more.html">More</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="applynow.html" class="cta-button">Apply Now</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+<main style="padding: 60px 20px; font-family: 'Poppins', sans-serif; background: linear-gradient(to bottom, #fff 0%, #f1f1f1 100%);">
+ <section style="margin-bottom: 60px; display: flex; flex-direction: row; gap: 20px; align-items: center; flex-wrap: wrap; background: white; border-radius: 12px; box-shadow: 0 6px 20px rgba(0,0,0,0.06); padding: 30px; position: relative;">
+  <div id="vanSlides" style="display: flex; align-items: center; gap: 30px; width: 100%;">
+
+    <!-- Slide 1 -->
+    <div class="car-slide" style="display: flex; width: 100%; align-items: center;">
+      <div style="flex: 1; text-align: center;">
+        <img src="Images/van1.jpg" alt="Nissan NV200" style="width: 220px; border-radius: 10px;">
+        <p style="margin-top: 8px; font-size: 14px; color: #777;">Nissan NV200</p>
+      </div>
+      <div style="flex: 2; text-align: left;">
+        <h2 style="color: #ffc107; font-size: 20px;">🚐 Car Derived Vans</h2>
+        <p style="font-size: 14px;">Compact delivery van with excellent cargo capacity and fuel efficiency.</p>
+        <ul style="padding-left: 18px; font-size: 14px;">
+          <li><strong>Member:</strong> $9.00/hr or $85/day</li>
+          <li><strong>Casual:</strong> $13.00/hr or $105/day</li>
+          <li><strong>Seats:</strong> 2 | <strong>Doors:</strong> 4 | <strong>Fuel:</strong> Petrol | <strong>Gear:</strong> Auto</li>
+        </ul>
+        <a href="applynow.html?car=Nissan%20NV200" style="background: #ffc107; color: white; padding: 8px 16px; border-radius: 6px; text-decoration: none; font-weight: 500; font-size: 14px;">BOOK NOW</a>
+      </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="car-slide" style="display: none; width: 100%; align-items: center;">
+      <div style="flex: 1; text-align: center;">
+        <img src="Images/van2.jpg" alt="Renault Kangoo" style="width: 220px; border-radius: 10px;">
+        <p style="margin-top: 8px; font-size: 14px; color: #777;">Renault Kangoo</p>
+      </div>
+      <div style="flex: 2; text-align: left;">
+        <h2 style="color: #ffc107; font-size: 20px;">🚐 Car Derived Vans</h2>
+        <p style="font-size: 14px;">Agile urban van with sliding doors and tech-friendly cabin.</p>
+        <ul style="padding-left: 18px; font-size: 14px;">
+          <li><strong>Member:</strong> $9.50/hr or $89/day</li>
+          <li><strong>Casual:</strong> $13.50/hr or $109/day</li>
+          <li><strong>Seats:</strong> 2 | <strong>Doors:</strong> 4 | <strong>Fuel:</strong> Petrol | <strong>Gear:</strong> Manual</li>
+        </ul>
+        <a href="applynow.html?car=Renault%20Kangoo" style="background: #ffc107; color: white; padding: 8px 16px; border-radius: 6px; text-decoration: none; font-weight: 500; font-size: 14px;">BOOK NOW</a>
+      </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="car-slide" style="display: none; width: 100%; align-items: center;">
+      <div style="flex: 1; text-align: center;">
+        <img src="Images/van3.jpg" alt="Ford Transit Courier" style="width: 220px; border-radius: 10px;">
+        <p style="margin-top: 8px; font-size: 14px; color: #777;">Ford Transit Courier</p>
+      </div>
+      <div style="flex: 2; text-align: left;">
+        <h2 style="color: #ffc107; font-size: 20px;">🚐 Car Derived Vans</h2>
+        <p style="font-size: 14px;">A smart choice for inner-city deliveries and business logistics.</p>
+        <ul style="padding-left: 18px; font-size: 14px;">
+          <li><strong>Member:</strong> $9.20/hr or $87/day</li>
+          <li><strong>Casual:</strong> $13.20/hr or $107/day</li>
+          <li><strong>Seats:</strong> 2 | <strong>Doors:</strong> 4 | <strong>Fuel:</strong> Diesel | <strong>Gear:</strong> Auto</li>
+        </ul>
+        <a href="applynow.html?car=Ford%20Transit%20Courier" style="background: #ffc107; color: white; padding: 8px 16px; border-radius: 6px; text-decoration: none; font-weight: 500; font-size: 14px;">BOOK NOW</a>
+      </div>
+    </div>
+
+    <!-- Slide 4 -->
+    <div class="car-slide" style="display: none; width: 100%; align-items: center;">
+      <div style="flex: 1; text-align: center;">
+        <img src="Images/van4.jpg" alt="Citroën Berlingo" style="width: 220px; border-radius: 10px;">
+        <p style="margin-top: 8px; font-size: 14px; color: #777;">Citroën Berlingo</p>
+      </div>
+      <div style="flex: 2; text-align: left;">
+        <h2 style="color: #ffc107; font-size: 20px;">🚐 Car Derived Vans</h2>
+        <p style="font-size: 14px;">Comfortable and reliable with modular storage options.</p>
+        <ul style="padding-left: 18px; font-size: 14px;">
+          <li><strong>Member:</strong> $9.80/hr or $90/day</li>
+          <li><strong>Casual:</strong> $14.00/hr or $110/day</li>
+          <li><strong>Seats:</strong> 2 | <strong>Doors:</strong> 4 | <strong>Fuel:</strong> Petrol | <strong>Gear:</strong> Auto</li>
+        </ul>
+        <a href="applynow.html?car=Citroen%20Berlingo" style="background: #ffc107; color: white; padding: 8px 16px; border-radius: 6px; text-decoration: none; font-weight: 500; font-size: 14px;">BOOK NOW</a>
+      </div>
+    </div>
+
+    <!-- Slide 5 -->
+    <div class="car-slide" style="display: none; width: 100%; align-items: center;">
+      <div style="flex: 1; text-align: center;">
+        <img src="Images/van5.jpg" alt="Peugeot Partner" style="width: 220px; border-radius: 10px;">
+        <p style="margin-top: 8px; font-size: 14px; color: #777;">Peugeot Partner</p>
+      </div>
+      <div style="flex: 2; text-align: left;">
+        <h2 style="color: #ffc107; font-size: 20px;">🚐 Car Derived Vans</h2>
+        <p style="font-size: 14px;">Built for business. Smooth handling and flexible cargo space.</p>
+        <ul style="padding-left: 18px; font-size: 14px;">
+          <li><strong>Member:</strong> $9.70/hr or $88/day</li>
+          <li><strong>Casual:</strong> $13.80/hr or $108/day</li>
+          <li><strong>Seats:</strong> 2 | <strong>Doors:</strong> 4 | <strong>Fuel:</strong> Diesel | <strong>Gear:</strong> Manual</li>
+        </ul>
+        <a href="applynow.html?car=Peugeot%20Partner" style="background: #ffc107; color: white; padding: 8px 16px; border-radius: 6px; text-decoration: none; font-weight: 500; font-size: 14px;">BOOK NOW</a>
+      </div>
+    </div>
+
+  </div>
+  <!-- Navigation Buttons -->
+<div style="position: absolute; bottom: 10px; right: 10px; display: flex; gap: 10px;">
+  <button onclick="prevVan()" style="background: #ffc107; color: white; border: none; padding: 6px 10px; font-size: 14px; border-radius: 50%; width: 34px; height: 34px; cursor: pointer; box-shadow: 0 2px 6px rgba(0,0,0,0.15);">←</button>
+  <button onclick="nextVan()" style="background: #ffc107; color: white; border: none; padding: 6px 10px; font-size: 14px; border-radius: 50%; width: 34px; height: 34px; cursor: pointer; box-shadow: 0 2px 6px rgba(0,0,0,0.15);">→</button>
+</div>
+
+</section>
+<script>
+  const vanSlides = document.querySelectorAll('#vanSlides .car-slide');
+  let vanIndex = 0;
+
+  function showVan(index) {
+    vanSlides.forEach((slide, i) => {
+      slide.style.display = i === index ? 'flex' : 'none';
+    });
+  }
+
+  function nextVan() {
+    vanIndex = (vanIndex + 1) % vanSlides.length;
+    showVan(vanIndex);
+  }
+
+  function prevVan() {
+    vanIndex = (vanIndex - 1 + vanSlides.length) % vanSlides.length;
+    showVan(vanIndex);
+  }
+
+  // Initial call
+  showVan(vanIndex);
+</script>
+
+
+ <section style="margin-bottom: 60px; background: white; border-radius: 12px; box-shadow: 0 6px 20px rgba(0,0,0,0.06); padding: 30px; position: relative;">
+  <div id="smallVanSlides" style="display: flex; align-items: center; gap: 30px; width: 100%;">
+
+    <!-- Slide 1 -->
+    <div class="car-slide" style="display: flex; width: 100%; align-items: center;">
+      <div style="flex: 2; text-align: left;">
+        <h2 style="color: #ffc107; font-size: 20px;">🚐 Small Vans</h2>
+        <p style="font-size: 14px;">Compact, fuel-efficient van ideal for tight urban deliveries.</p>
+        <ul style="padding-left: 18px; font-size: 14px;">
+          <li><strong>Member:</strong> $12.00/hr or $100/day</li>
+          <li><strong>Casual:</strong> $15.50/hr or $125/day</li>
+          <li>Seats: 2 | Doors: 4 | Fuel: Petrol | Gear: Auto</li>
+        </ul>
+        <a href="applynow.html?car=Ford%20Transit%20Connect" style="background: #ffc107; color: white; padding: 8px 16px; border-radius: 6px; text-decoration: none; font-weight: 500; font-size: 14px;">BOOK NOW</a>
+      </div>
+      <div style="flex: 1; text-align: center;">
+        <img src="Images/small_van1.jpg" alt="Ford Transit Connect" style="width: 220px; border-radius: 10px;">
+        <p style="margin-top: 8px; font-size: 14px; color: #777;">Ford Transit Connect</p>
+      </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="car-slide" style="display: none; width: 100%; align-items: center;">
+      <div style="flex: 2; text-align: left;">
+        <h2 style="color: #ffc107; font-size: 20px;">🚐 Small Vans</h2>
+        <p style="font-size: 14px;">Urban-ready and maneuverable with surprising cargo space.</p>
+        <ul style="padding-left: 18px; font-size: 14px;">
+          <li><strong>Member:</strong> $11.50/hr or $95/day</li>
+          <li><strong>Casual:</strong> $14.00/hr or $115/day</li>
+          <li>Seats: 2 | Doors: 5 | Fuel: Diesel | Gear: Manual</li>
+        </ul>
+        <a href="applynow.html?car=Nissan%20NV200" style="background: #ffc107; color: white; padding: 8px 16px; border-radius: 6px; text-decoration: none; font-weight: 500; font-size: 14px;">BOOK NOW</a>
+      </div>
+      <div style="flex: 1; text-align: center;">
+        <img src="Images/small_van2.jpg" alt="Nissan NV200" style="width: 220px; border-radius: 10px;">
+        <p style="margin-top: 8px; font-size: 14px; color: #777;">Nissan NV200</p>
+      </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="car-slide" style="display: none; width: 100%; align-items: center;">
+      <div style="flex: 2; text-align: left;">
+        <h2 style="color: #ffc107; font-size: 20px;">🚐 Small Vans</h2>
+        <p style="font-size: 14px;">Flexible cargo area and comfortable ride for small business needs.</p>
+        <ul style="padding-left: 18px; font-size: 14px;">
+          <li><strong>Member:</strong> $12.90/hr or $108/day</li>
+          <li><strong>Casual:</strong> $16.00/hr or $130/day</li>
+          <li>Seats: 3 | Doors: 4 | Fuel: Petrol | Gear: Auto</li>
+        </ul>
+        <a href="applynow.html?car=Citroën%20Berlingo" style="background: #ffc107; color: white; padding: 8px 16px; border-radius: 6px; text-decoration: none; font-weight: 500; font-size: 14px;">BOOK NOW</a>
+      </div>
+      <div style="flex: 1; text-align: center;">
+        <img src="Images/small_van3.jpg" alt="Citroën Berlingo" style="width: 220px; border-radius: 10px;">
+        <p style="margin-top: 8px; font-size: 14px; color: #777;">Citroën Berlingo</p>
+      </div>
+    </div>
+
+    <!-- Slide 4 -->
+    <div class="car-slide" style="display: none; width: 100%; align-items: center;">
+      <div style="flex: 2; text-align: left;">
+        <h2 style="color: #ffc107; font-size: 20px;">🚐 Small Vans</h2>
+        <p style="font-size: 14px;">Smart storage and efficient performance in a stylish package.</p>
+        <ul style="padding-left: 18px; font-size: 14px;">
+          <li><strong>Member:</strong> $11.00/hr or $90/day</li>
+          <li><strong>Casual:</strong> $14.00/hr or $115/day</li>
+          <li>Seats: 2 | Doors: 4 | Fuel: Diesel | Gear: Manual</li>
+        </ul>
+        <a href="applynow.html?car=Peugeot%20Partner" style="background: #ffc107; color: white; padding: 8px 16px; border-radius: 6px; text-decoration: none; font-weight: 500; font-size: 14px;">BOOK NOW</a>
+      </div>
+      <div style="flex: 1; text-align: center;">
+        <img src="Images/small_van4.jpg" alt="Peugeot Partner" style="width: 220px; border-radius: 10px;">
+        <p style="margin-top: 8px; font-size: 14px; color: #777;">Peugeot Partner</p>
+      </div>
+    </div>
+
+    <!-- Slide 5 -->
+    <div class="car-slide" style="display: none; width: 100%; align-items: center;">
+      <div style="flex: 2; text-align: left;">
+        <h2 style="color: #ffc107; font-size: 20px;">🚐 Small Vans</h2>
+        <p style="font-size: 14px;">Trusted German engineering with impressive load capacity.</p>
+        <ul style="padding-left: 18px; font-size: 14px;">
+          <li><strong>Member:</strong> $13.00/hr or $110/day</li>
+          <li><strong>Casual:</strong> $16.50/hr or $135/day</li>
+          <li>Seats: 2 | Doors: 4 | Fuel: Petrol | Gear: Auto</li>
+        </ul>
+        <a href="applynow.html?car=Volkswagen%20Caddy" style="background: #ffc107; color: white; padding: 8px 16px; border-radius: 6px; text-decoration: none; font-weight: 500; font-size: 14px;">BOOK NOW</a>
+      </div>
+      <div style="flex: 1; text-align: center;">
+        <img src="Images/small_van5.jpg" alt="Volkswagen Caddy" style="width: 220px; border-radius: 10px;">
+        <p style="margin-top: 8px; font-size: 14px; color: #777;">Volkswagen Caddy</p>
+      </div>
+    </div>
+
+  </div>
+  <div style="position: absolute; bottom: 10px; right: 10px; display: flex; gap: 10px;">
+    <button onclick="prevSmallVan()" style="background: #ffc107; color: white; border: none; padding: 6px 10px; font-size: 14px; border-radius: 50%; width: 34px; height: 34px; cursor: pointer; box-shadow: 0 2px 6px rgba(0,0,0,0.15);">←</button>
+    <button onclick="nextSmallVan()" style="background: #ffc107; color: white; border: none; padding: 6px 10px; font-size: 14px; border-radius: 50%; width: 34px; height: 34px; cursor: pointer; box-shadow: 0 2px 6px rgba(0,0,0,0.15);">→</button>
+  </div>
+</section>
+
+<script>
+  const smallVanSlides = document.querySelectorAll('#smallVanSlides .car-slide');
+  let smallVanIndex = 0;
+  function showSmallVan(index) {
+    smallVanSlides.forEach((s, i) => s.style.display = i === index ? 'flex' : 'none');
+  }
+  function nextSmallVan() {
+    smallVanIndex = (smallVanIndex + 1) % smallVanSlides.length;
+    showSmallVan(smallVanIndex);
+  }
+  function prevSmallVan() {
+    smallVanIndex = (smallVanIndex - 1 + smallVanSlides.length) % smallVanSlides.length;
+    showSmallVan(smallVanIndex);
+  }
+  showSmallVan(smallVanIndex);
+</script>
+
+
+ <!-- Medium Vans Section (Image on left, details on right) -->
+<section style="margin-bottom: 60px; display: flex; flex-direction: row; gap: 20px; align-items: center; flex-wrap: wrap; background: white; border-radius: 12px; box-shadow: 0 6px 20px rgba(0,0,0,0.06); padding: 30px; position: relative;">
+  <div id="mediumVanSlides" style="display: flex; align-items: center; gap: 30px; width: 100%;">
+
+    <!-- Slide 1: Ford Transit Custom -->
+    <div class="car-slide" style="display: flex; width: 100%; align-items: center;">
+      <div style="flex: 1; text-align: center;">
+        <img src="Images/medium1.jpg" alt="Ford Transit Custom" style="width: 220px; border-radius: 10px;">
+        <p style="margin-top: 8px; font-size: 14px; color: #777;">Ford Transit Custom</p>
+      </div>
+      <div style="flex: 2; text-align: left;">
+        <h2 style="color: #ffc107; font-size: 20px;">Medium Vans</h2>
+        <p style="font-size: 14px;">Versatile and reliable van, ideal for transporting tools and equipment with ample space.</p>
+        <ul style="padding-left: 18px; font-size: 14px;">
+          <li><strong>Member Price:</strong> $14.00/hr or $120/day</li>
+          <li><strong>Casual Price:</strong> $17.50/hr or $145/day</li>
+          <li><strong>Seats:</strong> 3 | <strong>Fuel:</strong> Diesel | <strong>Gear:</strong> Auto</li>
+        </ul>
+        <a href="applynow.html?car=Ford%20Transit%20Custom" style="background: #ffc107; color: white; padding: 8px 16px; border-radius: 6px; text-decoration: none; font-weight: 500; font-size: 14px;">BOOK NOW</a>
+      </div>
+    </div>
+
+    <!-- Slide 2: Mercedes-Benz Vito -->
+    <div class="car-slide" style="display: none; width: 100%; align-items: center;">
+      <div style="flex: 1; text-align: center;">
+        <img src="Images/medium2.jpg" alt="Mercedes-Benz Vito" style="width: 220px; border-radius: 10px;">
+        <p style="margin-top: 8px; font-size: 14px; color: #777;">Mercedes-Benz Vito</p>
+      </div>
+      <div style="flex: 2; text-align: left;">
+        <h2 style="color: #ffc107; font-size: 20px;">Medium Vans</h2>
+        <p style="font-size: 14px;">Smooth ride with luxury features. Great for small business deliveries and urban logistics.</p>
+        <ul style="padding-left: 18px; font-size: 14px;">
+          <li><strong>Member Price:</strong> $15.00/hr or $130/day</li>
+          <li><strong>Casual Price:</strong> $18.90/hr or $155/day</li>
+          <li><strong>Seats:</strong> 3 | <strong>Fuel:</strong> Diesel | <strong>Gear:</strong> Auto</li>
+        </ul>
+        <a href="applynow.html?car=Mercedes-Benz%20Vito" style="background: #ffc107; color: white; padding: 8px 16px; border-radius: 6px; text-decoration: none; font-weight: 500; font-size: 14px;">BOOK NOW</a>
+      </div>
+    </div>
+
+    <!-- Slide 3: Renault Trafic -->
+    <div class="car-slide" style="display: none; width: 100%; align-items: center;">
+      <div style="flex: 1; text-align: center;">
+        <img src="Images/medium3.jpg" alt="Renault Trafic" style="width: 220px; border-radius: 10px;">
+        <p style="margin-top: 8px; font-size: 14px; color: #777;">Renault Trafic</p>
+      </div>
+      <div style="flex: 2; text-align: left;">
+        <h2 style="color: #ffc107; font-size: 20px;">Medium Vans</h2>
+        <p style="font-size: 14px;">Economical and spacious van with excellent cargo volume for delivery tasks.</p>
+        <ul style="padding-left: 18px; font-size: 14px;">
+          <li><strong>Member Price:</strong> $13.90/hr or $115/day</li>
+          <li><strong>Casual Price:</strong> $17.00/hr or $135/day</li>
+          <li><strong>Seats:</strong> 3 | <strong>Fuel:</strong> Diesel | <strong>Gear:</strong> Manual</li>
+        </ul>
+        <a href="applynow.html?car=Renault%20Trafic" style="background: #ffc107; color: white; padding: 8px 16px; border-radius: 6px; text-decoration: none; font-weight: 500; font-size: 14px;">BOOK NOW</a>
+      </div>
+    </div>
+
+    <!-- Slide 4: Peugeot Expert -->
+    <div class="car-slide" style="display: none; width: 100%; align-items: center;">
+      <div style="flex: 1; text-align: center;">
+        <img src="Images/medium4.jpg" alt="Peugeot Expert" style="width: 220px; border-radius: 10px;">
+        <p style="margin-top: 8px; font-size: 14px; color: #777;">Peugeot Expert</p>
+      </div>
+      <div style="flex: 2; text-align: left;">
+        <h2 style="color: #ffc107; font-size: 20px;">Medium Vans</h2>
+        <p style="font-size: 14px;">Compact size with large capacity. Suitable for tradespeople and city deliveries.</p>
+        <ul style="padding-left: 18px; font-size: 14px;">
+          <li><strong>Member Price:</strong> $13.00/hr or $110/day</li>
+          <li><strong>Casual Price:</strong> $16.50/hr or $130/day</li>
+          <li><strong>Seats:</strong> 3 | <strong>Fuel:</strong> Petrol | <strong>Gear:</strong> Auto</li>
+        </ul>
+        <a href="applynow.html?car=Peugeot%20Expert" style="background: #ffc107; color: white; padding: 8px 16px; border-radius: 6px; text-decoration: none; font-weight: 500; font-size: 14px;">BOOK NOW</a>
+      </div>
+    </div>
+
+    <!-- Slide 5: Citroën Dispatch -->
+    <div class="car-slide" style="display: none; width: 100%; align-items: center;">
+      <div style="flex: 1; text-align: center;">
+        <img src="Images/medium5.jpg" alt="Citroen Dispatch" style="width: 220px; border-radius: 10px;">
+        <p style="margin-top: 8px; font-size: 14px; color: #777;">Citroën Dispatch</p>
+      </div>
+      <div style="flex: 2; text-align: left;">
+        <h2 style="color: #ffc107; font-size: 20px;">Medium Vans</h2>
+        <p style="font-size: 14px;">Modern van offering comfort and functionality. Designed for efficient urban operations.</p>
+        <ul style="padding-left: 18px; font-size: 14px;">
+          <li><strong>Member Price:</strong> $14.50/hr or $125/day</li>
+          <li><strong>Casual Price:</strong> $18.00/hr or $140/day</li>
+          <li><strong>Seats:</strong> 3 | <strong>Fuel:</strong> Diesel | <strong>Gear:</strong> Auto</li>
+        </ul>
+        <a href="applynow.html?car=Citroen%20Dispatch" style="background: #ffc107; color: white; padding: 8px 16px; border-radius: 6px; text-decoration: none; font-weight: 500; font-size: 14px;">BOOK NOW</a>
+      </div>
+    </div>
+
+  </div>
+  <div style="position: absolute; bottom: 10px; right: 10px; display: flex; gap: 10px;">
+    <button onclick="prevMediumVan()" style="background: #ffc107; color: white; border: none; padding: 6px 10px; font-size: 14px; border-radius: 50%; width: 34px; height: 34px; cursor: pointer; box-shadow: 0 2px 6px rgba(0,0,0,0.15);">&larr;</button>
+    <button onclick="nextMediumVan()" style="background: #ffc107; color: white; border: none; padding: 6px 10px; font-size: 14px; border-radius: 50%; width: 34px; height: 34px; cursor: pointer; box-shadow: 0 2px 6px rgba(0,0,0,0.15);">&rarr;</button>
+  </div>
+</section>
+
+<script>
+  const mediumVanSlides = document.querySelectorAll('#mediumVanSlides .car-slide');
+  let mediumVanIndex = 0;
+  function showMediumVan(index) {
+    mediumVanSlides.forEach((s, i) => s.style.display = i === index ? 'flex' : 'none');
+  }
+  function nextMediumVan() {
+    mediumVanIndex = (mediumVanIndex + 1) % mediumVanSlides.length;
+    showMediumVan(mediumVanIndex);
+  }
+  function prevMediumVan() {
+    mediumVanIndex = (mediumVanIndex - 1 + mediumVanSlides.length) % mediumVanSlides.length;
+    showMediumVan(mediumVanIndex);
+  }
+  showMediumVan(mediumVanIndex);
+</script>
+
+<section style="margin-bottom: 60px; display: flex; flex-direction: row-reverse; gap: 20px; align-items: center; flex-wrap: wrap; background: white; border-radius: 12px; box-shadow: 0 6px 20px rgba(0,0,0,0.06); padding: 30px; position: relative;">
+  <div id="largeVanSlides" style="display: flex; align-items: center; gap: 30px; width: 100%;">
+    <!-- Slide 1 -->
+    <div class="car-slide" style="display: flex; width: 100%; align-items: center;">
+      <div style="flex: 2; text-align: left;">
+        <h2 style="color: #ffc107; font-size: 20px;">Large Vans</h2>
+        <p style="font-size: 14px;">Heavy-duty cargo van offering maximum load space and durability.</p>
+        <ul style="padding-left: 18px; font-size: 14px;">
+          <li><strong>Member Price:</strong> $18.00/hr or $150/day</li>
+          <li><strong>Casual Price:</strong> $22.00/hr or $180/day</li>
+          <li><strong>Seats:</strong> 3 | <strong>Fuel:</strong> Diesel | <strong>Gear:</strong> Manual</li>
+        </ul>
+        <a href="applynow.html?car=Ford%20Transit" style="background: #ffc107; color: white; padding: 8px 16px; border-radius: 6px; text-decoration: none; font-weight: 500; font-size: 14px;">BOOK NOW</a>
+      </div>
+      <div style="flex: 1; text-align: center;">
+        <img src="Images/ford_transit.jpg" alt="Ford Transit" style="width: 220px; border-radius: 10px;">
+        <p style="margin-top: 8px; font-size: 14px; color: #777;">Ford Transit</p>
+      </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="car-slide" style="display: none; width: 100%; align-items: center;">
+      <div style="flex: 2; text-align: left;">
+        <h2 style="color: #ffc107; font-size: 20px;">Large Vans</h2>
+        <p style="font-size: 14px;">Reliable full-size van suitable for long hauls and bigger payloads.</p>
+        <ul style="padding-left: 18px; font-size: 14px;">
+          <li><strong>Member Price:</strong> $17.50/hr or $145/day</li>
+          <li><strong>Casual Price:</strong> $21.00/hr or $170/day</li>
+          <li><strong>Seats:</strong> 3 | <strong>Fuel:</strong> Diesel | <strong>Gear:</strong> Auto</li>
+        </ul>
+        <a href="applynow.html?car=Mercedes%20Sprinter" style="background: #ffc107; color: white; padding: 8px 16px; border-radius: 6px; text-decoration: none; font-weight: 500; font-size: 14px;">BOOK NOW</a>
+      </div>
+      <div style="flex: 1; text-align: center;">
+        <img src="Images/mercedes_sprinter.jpg" alt="Mercedes Sprinter" style="width: 220px; border-radius: 10px;">
+        <p style="margin-top: 8px; font-size: 14px; color: #777;">Mercedes Sprinter</p>
+      </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="car-slide" style="display: none; width: 100%; align-items: center;">
+      <div style="flex: 2; text-align: left;">
+        <h2 style="color: #ffc107; font-size: 20px;">Large Vans</h2>
+        <p style="font-size: 14px;">Ideal for trades and tools, with dual rear doors and long wheelbase.</p>
+        <ul style="padding-left: 18px; font-size: 14px;">
+          <li><strong>Member Price:</strong> $16.90/hr or $140/day</li>
+          <li><strong>Casual Price:</strong> $20.00/hr or $165/day</li>
+          <li><strong>Seats:</strong> 3 | <strong>Fuel:</strong> Diesel | <strong>Gear:</strong> Manual</li>
+        </ul>
+        <a href="applynow.html?car=Renault%20Master" style="background: #ffc107; color: white; padding: 8px 16px; border-radius: 6px; text-decoration: none; font-weight: 500; font-size: 14px;">BOOK NOW</a>
+      </div>
+      <div style="flex: 1; text-align: center;">
+        <img src="Images/renault_master.jpg" alt="Renault Master" style="width: 220px; border-radius: 10px;">
+        <p style="margin-top: 8px; font-size: 14px; color: #777;">Renault Master</p>
+      </div>
+    </div>
+
+    <!-- Slide 4 -->
+    <div class="car-slide" style="display: none; width: 100%; align-items: center;">
+      <div style="flex: 2; text-align: left;">
+        <h2 style="color: #ffc107; font-size: 20px;">Large Vans</h2>
+        <p style="font-size: 14px;">Extended cargo capacity with versatile storage configurations.</p>
+        <ul style="padding-left: 18px; font-size: 14px;">
+          <li><strong>Member Price:</strong> $18.50/hr or $155/day</li>
+          <li><strong>Casual Price:</strong> $22.50/hr or $185/day</li>
+          <li><strong>Seats:</strong> 3 | <strong>Fuel:</strong> Petrol | <strong>Gear:</strong> Auto</li>
+        </ul>
+        <a href="applynow.html?car=Volkswagen%20Crafter" style="background: #ffc107; color: white; padding: 8px 16px; border-radius: 6px; text-decoration: none; font-weight: 500; font-size: 14px;">BOOK NOW</a>
+      </div>
+      <div style="flex: 1; text-align: center;">
+        <img src="Images/vw_crafter.jpg" alt="Volkswagen Crafter" style="width: 220px; border-radius: 10px;">
+        <p style="margin-top: 8px; font-size: 14px; color: #777;">Volkswagen Crafter</p>
+      </div>
+    </div>
+
+    <!-- Slide 5 -->
+    <div class="car-slide" style="display: none; width: 100%; align-items: center;">
+      <div style="flex: 2; text-align: left;">
+        <h2 style="color: #ffc107; font-size: 20px;">Large Vans</h2>
+        <p style="font-size: 14px;">Built for bulky goods with impressive towing capacity and cabin comfort.</p>
+        <ul style="padding-left: 18px; font-size: 14px;">
+          <li><strong>Member Price:</strong> $19.00/hr or $160/day</li>
+          <li><strong>Casual Price:</strong> $23.00/hr or $190/day</li>
+          <li><strong>Seats:</strong> 3 | <strong>Fuel:</strong> Diesel | <strong>Gear:</strong> Manual</li>
+        </ul>
+        <a href="applynow.html?car=Iveco%20Daily" style="background: #ffc107; color: white; padding: 8px 16px; border-radius: 6px; text-decoration: none; font-weight: 500; font-size: 14px;">BOOK NOW</a>
+      </div>
+      <div style="flex: 1; text-align: center;">
+        <img src="Images/iveco_daily.jpg" alt="Iveco Daily" style="width: 220px; border-radius: 10px;">
+        <p style="margin-top: 8px; font-size: 14px; color: #777;">Iveco Daily</p>
+      </div>
+    </div>
+  </div>
+  <div style="position: absolute; bottom: 10px; right: 10px; display: flex; gap: 10px;">
+    <button onclick="prevLargeVan()" style="background: #ffc107; color: white; border: none; padding: 6px 10px; font-size: 14px; border-radius: 50%; width: 34px; height: 34px; cursor: pointer; box-shadow: 0 2px 6px rgba(0,0,0,0.15);">←</button>
+    <button onclick="nextLargeVan()" style="background: #ffc107; color: white; border: none; padding: 6px 10px; font-size: 14px; border-radius: 50%; width: 34px; height: 34px; cursor: pointer; box-shadow: 0 2px 6px rgba(0,0,0,0.15);">→</button>
+  </div>
+</section>
+
+<script>
+  const largeVanSlides = document.querySelectorAll('#largeVanSlides .car-slide');
+  let largeVanIndex = 0;
+  function showLargeVan(index) {
+    largeVanSlides.forEach((s, i) => s.style.display = i === index ? 'flex' : 'none');
+  }
+  function nextLargeVan() {
+    largeVanIndex = (largeVanIndex + 1) % largeVanSlides.length;
+    showLargeVan(largeVanIndex);
+  }
+  function prevLargeVan() {
+    largeVanIndex = (largeVanIndex - 1 + largeVanSlides.length) % largeVanSlides.length;
+    showLargeVan(largeVanIndex);
+  }
+  showLargeVan(largeVanIndex);
+</script>
+
+
+<section style="margin-bottom: 60px; display: flex; flex-direction: row; gap: 20px; align-items: center; flex-wrap: wrap; background: white; border-radius: 12px; box-shadow: 0 6px 20px rgba(0,0,0,0.06); padding: 30px; position: relative;">
+  <div id="crewSlides" style="display: flex; align-items: center; gap: 30px; width: 100%;">
+
+    <!-- Slide 1 -->
+    <div class="car-slide" style="display: flex; width: 100%; align-items: center;">
+      <div style="flex: 1; text-align: center;">
+        <img src="Images/crew1.jpg" alt="Mercedes-Benz Vito Tourer" style="width: 220px; border-radius: 10px;">
+        <p style="margin-top: 8px; font-size: 14px; color: #777;">Mercedes-Benz Vito Tourer</p>
+      </div>
+      <div style="flex: 2; text-align: left;">
+        <h2 style="color: #ffc107; font-size: 20px;">🚐 Crew Vans & 9 Seaters</h2>
+        <p style="font-size: 14px;">Premium comfort and space with luxury finishes. Ideal for executive or VIP group travel.</p>
+        <ul style="padding-left: 18px; font-size: 14px;">
+          <li><strong>Member Price:</strong> $19.00/hr or $160/day</li>
+          <li><strong>Casual Price:</strong> $23.00/hr or $190/day</li>
+          <li><strong>Seats:</strong> 9 | <strong>Doors:</strong> 5 | <strong>Fuel:</strong> Diesel | <strong>Gear:</strong> Automatic</li>
+        </ul>
+        <a href="applynow.html?car=Mercedes-Benz%20Vito%20Tourer" style="background: #ffc107; color: white; padding: 8px 16px; border-radius: 6px; text-decoration: none; font-weight: 500; font-size: 14px;">BOOK NOW</a>
+      </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="car-slide" style="display: none; width: 100%; align-items: center;">
+      <div style="flex: 1; text-align: center;">
+        <img src="Images/crew2.jpg" alt="Toyota HiAce Commuter GL" style="width: 220px; border-radius: 10px;">
+        <p style="margin-top: 8px; font-size: 14px; color: #777;">Toyota HiAce Commuter GL</p>
+      </div>
+      <div style="flex: 2; text-align: left;">
+        <h2 style="color: #ffc107; font-size: 20px;">🚐 Crew Vans & 9 Seaters</h2>
+        <p style="font-size: 14px;">Australia’s trusted people mover. Spacious cabin and reliable performance for all types of trips.</p>
+        <ul style="padding-left: 18px; font-size: 14px;">
+          <li><strong>Member Price:</strong> $20.00/hr or $170/day</li>
+          <li><strong>Casual Price:</strong> $24.00/hr or $200/day</li>
+          <li><strong>Seats:</strong> 9 | <strong>Doors:</strong> 4 | <strong>Fuel:</strong> Petrol | <strong>Gear:</strong> Automatic</li>
+        </ul>
+        <a href="applynow.html?car=Toyota%20HiAce%20Commuter%20GL" style="background: #ffc107; color: white; padding: 8px 16px; border-radius: 6px; text-decoration: none; font-weight: 500; font-size: 14px;">BOOK NOW</a>
+      </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="car-slide" style="display: none; width: 100%; align-items: center;">
+      <div style="flex: 1; text-align: center;">
+        <img src="Images/crew3.jpg" alt="Ford Transit Custom 320 Trend" style="width: 220px; border-radius: 10px;">
+        <p style="margin-top: 8px; font-size: 14px; color: #777;">Ford Transit Custom 320 Trend</p>
+      </div>
+      <div style="flex: 2; text-align: left;">
+        <h2 style="color: #ffc107; font-size: 20px;">🚐 Crew Vans & 9 Seaters</h2>
+        <p style="font-size: 14px;">Perfect for trade teams or large families. Smooth ride with modern interior features.</p>
+        <ul style="padding-left: 18px; font-size: 14px;">
+          <li><strong>Member Price:</strong> $18.50/hr or $150/day</li>
+          <li><strong>Casual Price:</strong> $22.50/hr or $180/day</li>
+          <li><strong>Seats:</strong> 8 | <strong>Doors:</strong> 5 | <strong>Fuel:</strong> Diesel | <strong>Gear:</strong> Manual</li>
+        </ul>
+        <a href="applynow.html?car=Ford%20Transit%20Custom%20320%20Trend" style="background: #ffc107; color: white; padding: 8px 16px; border-radius: 6px; text-decoration: none; font-weight: 500; font-size: 14px;">BOOK NOW</a>
+      </div>
+    </div>
+
+    <!-- Slide 4 -->
+    <div class="car-slide" style="display: none; width: 100%; align-items: center;">
+      <div style="flex: 1; text-align: center;">
+        <img src="Images/crew4.jpg" alt="Hyundai Staria Load Crew Van" style="width: 220px; border-radius: 10px;">
+        <p style="margin-top: 8px; font-size: 14px; color: #777;">Hyundai Staria Load Crew Van</p>
+      </div>
+      <div style="flex: 2; text-align: left;">
+        <h2 style="color: #ffc107; font-size: 20px;">🚐 Crew Vans & 9 Seaters</h2>
+        <p style="font-size: 14px;">Futuristic design with advanced safety tech. Great for professional crew transport.</p>
+        <ul style="padding-left: 18px; font-size: 14px;">
+          <li><strong>Member Price:</strong> $18.80/hr or $155/day</li>
+          <li><strong>Casual Price:</strong> $22.60/hr or $185/day</li>
+          <li><strong>Seats:</strong> 8 | <strong>Doors:</strong> 5 | <strong>Fuel:</strong> Diesel | <strong>Gear:</strong> Automatic</li>
+        </ul>
+        <a href="applynow.html?car=Hyundai%20Staria%20Load%20Crew%20Van" style="background: #ffc107; color: white; padding: 8px 16px; border-radius: 6px; text-decoration: none; font-weight: 500; font-size: 14px;">BOOK NOW</a>
+      </div>
+    </div>
+
+    <!-- Slide 5 -->
+    <div class="car-slide" style="display: none; width: 100%; align-items: center;">
+      <div style="flex: 1; text-align: center;">
+        <img src="Images/crew5.jpg" alt="Renault Trafic Passenger" style="width: 220px; border-radius: 10px;">
+        <p style="margin-top: 8px; font-size: 14px; color: #777;">Renault Trafic Passenger</p>
+      </div>
+      <div style="flex: 2; text-align: left;">
+        <h2 style="color: #ffc107; font-size: 20px;">🚐 Crew Vans & 9 Seaters</h2>
+        <p style="font-size: 14px;">European efficiency and comfort. Quiet ride, flexible space, and great fuel economy.</p>
+        <ul style="padding-left: 18px; font-size: 14px;">
+          <li><strong>Member Price:</strong> $17.50/hr or $145/day</li>
+          <li><strong>Casual Price:</strong> $21.00/hr or $175/day</li>
+          <li><strong>Seats:</strong> 9 | <strong>Doors:</strong> 5 | <strong>Fuel:</strong> Diesel | <strong>Gear:</strong> Automatic</li>
+        </ul>
+        <a href="applynow.html?car=Renault%20Trafic%20Passenger" style="background: #ffc107; color: white; padding: 8px 16px; border-radius: 6px; text-decoration: none; font-weight: 500; font-size: 14px;">BOOK NOW</a>
+      </div>
+    </div>
+  </div>
+
+  <div style="position: absolute; bottom: 10px; right: 10px; display: flex; gap: 10px;">
+    <button onclick="prevCrew()" style="background: #ffc107; color: white; border: none; padding: 6px 10px; font-size: 14px; border-radius: 50%; width: 34px; height: 34px; cursor: pointer; box-shadow: 0 2px 6px rgba(0,0,0,0.15);">←</button>
+    <button onclick="nextCrew()" style="background: #ffc107; color: white; border: none; padding: 6px 10px; font-size: 14px; border-radius: 50%; width: 34px; height: 34px; cursor: pointer; box-shadow: 0 2px 6px rgba(0,0,0,0.15);">→</button>
+  </div>
+</section>
+
+<script>
+  const crewSlides = document.querySelectorAll('#crewSlides .car-slide');
+  let crewIndex = 0;
+  function showCrew(index) {
+    crewSlides.forEach((s, i) => s.style.display = i === index ? 'flex' : 'none');
+  }
+  function nextCrew() {
+    crewIndex = (crewIndex + 1) % crewSlides.length;
+    showCrew(crewIndex);
+  }
+  function prevCrew() {
+    crewIndex = (crewIndex - 1 + crewSlides.length) % crewSlides.length;
+    showCrew(crewIndex);
+  }
+  showCrew(crewIndex);
+</script>
+
+
+
+<footer style="text-align: center; padding: 30px 0; background-color: #222; color: white;">
+  <p>&copy; 2025 CarRental. All rights reserved. | Powered by AJAX & JSON</p>
+</footer>
+ 
+  <script src="js/main.js"></script>
+</body>
+</html>

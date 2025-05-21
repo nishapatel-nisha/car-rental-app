@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Help - Car Rental</title>
+  <link rel="stylesheet" href="css-style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    
+    body {
+      font-family: Arial, sans-serif;
+      padding: 40px;
+      background: #f8f9fa;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #333;
+    }
+
+    .help-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .help-card {
+      width: 200px;
+      background: white;
+      border-radius: 8px;
+      overflow: hidden;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s ease;
+    }
+
+    .help-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .help-card img {
+      width: 100%;
+      height: 130px;
+      object-fit: cover;
+    }
+
+    .help-card h3 {
+      margin: 10px 0 5px;
+      color: #3c2b84; /* Dark purple like GO Rentals */
+      font-size: 16px;
+    }
+
+    .help-card p {
+      margin: 0 0 15px;
+      font-size: 14px;
+      color: #666;
+    }
+    a:hover {
+  text-decoration: underline;
+  color: #5a45b4;
+}
+
+  </style>
+</head>
+<header>
+    <div class="navbar">
+      <img src="Images/logo.png" alt="Logo" id="logo" onclick="window.location.href='index.html'">
+      <nav class="main-nav">
+        <ul>
+          <li><a href="Pricing.html">Pricing</a></li>
+          <li style="position: relative;">
+            <a href="Cars.html">Cars</a>
+            <div class="submenu-gallery">
+               <!-- Small Cars block -->
+    <div style="text-align: center;">
+      <img src="Images/smallcars.png" alt="Small Cars" style="width: 140px; height: 90px;">
+      <p style="margin: 5px 0 0; font-size: 14px; color: #333;">Small Cars</p>
+    </div>
+              <div style="text-align: center;">
+                <img src="Images/Ecars.png" alt="Ecars" style="width: 140px; height: 90px;">
+                <p style="margin: 5px 0 0; font-size: 14px; color: #333;">Electice cars</p>
+              </div>
+              <div style="text-align: center;">
+                <img src="Images/SUVcars.png" alt="SUVcars: style="width: 140px; height: 90px;">
+                <p style="margin: 5px 0 0; font-size: 14px; color: #333;">SUV cars</p>
+              </div>
+              <div style="text-align: center;">
+                <img src="Images/Hybridecars.png" alt="Hybridecars: style="width: 140px; height: 90px;" >
+                <p style="margin: 5px 0 0; font-size: 14px; color: #333;">Hybrid Cars</p>
+              </div>
+            </div>
+          </li>
+          
+          <li><a href="Vans.html"  class="active">Vans</a>
+            <div class="submenu-gallery">
+              <!-- Small Cars block -->
+   <div style="text-align: center;">
+     <img src="Images/1v.png" alt="Small Cars" style="width: 140px; height: 90px;">
+     <p style="margin: 5px 0 0; font-size: 14px; color: #333;">Car Derived vans</p>
+   </div>
+             <div style="text-align: center;">
+               <img src="Images/2v.png" alt="Ecars" style="width: 140px; height: 90px;">
+               <p style="margin: 5px 0 0; font-size: 14px; color: #333;">Small vans</p>
+             </div>
+             <div style="text-align: center;">
+               <img src="Images/3v.png" alt="SUVcars: style="width: 140px; height: 90px;">
+               <p style="margin: 5px 0 0; font-size: 14px; color: #333;">Medium vans</p>
+             </div>
+             <div style="text-align: center;">
+               <img src="Images/4v.png" alt="Hybridecars: style="width: 140px; height: 90px;" >
+               <p style="margin: 5px 0 0; font-size: 14px; color: #333;">Large vans</p>
+             </div>
+             <div style="text-align: center;">
+              <img src="Images/5v.png" alt="Hybridecars: style="width: 140px; height: 90px;" >
+              <p style="margin: 5px 0 0; font-size: 14px; color: #333;">Crew Vans & 9 Seaters</p>
+            </div>
+           </div>
+           </li>
+          <li><a href="help.html">Help</a></li>
+          <li><a href="more.html">More</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="applynow.html" class="cta-button">Apply Now</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+<body>
+
+  <section style="max-width: 1100px; margin: 80px auto 50px; background: #fff; padding: 40px; border-radius: 16px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); display: flex; flex-wrap: wrap; gap: 40px; justify-content: space-between; font-family: 'Poppins', sans-serif;">
+
+  <!-- Left: Modern Contact Info Section -->
+<div style="flex: 1 1 400px;">
+  <h2 style="color: #3c2b84; margin-bottom: 20px;">Contact Details</h2>
+
+  <div style="background: #f1f0ff; padding: 16px 20px; border-radius: 12px; margin-bottom: 15px; display: flex; align-items: center;">
+    <i class="fas fa-map-marker-alt" style="color:#3c2b84; font-size: 18px; margin-right: 15px;"></i>
+    <span>123 Rental Street, Sydney, NSW 2000</span>
+  </div>
+
+  <div style="background: #f1f0ff; padding: 16px 20px; border-radius: 12px; margin-bottom: 15px; display: flex; align-items: center;">
+    <i class="fas fa-envelope" style="color:#3c2b84; font-size: 18px; margin-right: 15px;"></i>
+    <a href="mailto:hello@nishacarrental.com" style="color: #3c2b84; text-decoration: none; cursor: pointer;">hello@nishacarrental.com</a>
+  </div>
+
+  <div style="background: #f1f0ff; padding: 16px 20px; border-radius: 12px; margin-bottom: 15px; display: flex; align-items: center;">
+    <i class="fas fa-phone" style="color:#3c2b84; font-size: 18px; margin-right: 15px;"></i>
+    <a href="tel:+61123456789" style="color: #3c2b84; text-decoration: none; cursor: pointer;">+61 123 456 789</a>
+  </div>
+
+  <div style="background: #f1f0ff; padding: 16px 20px; border-radius: 12px; margin-bottom: 15px; display: flex; align-items: center;">
+    <i class="fab fa-facebook" style="color:#3c2b84; font-size: 18px; margin-right: 15px;"></i>
+    <a href="https://facebook.com/NishaCarRental" target="_blank" style="color: #3c2b84; text-decoration: none; cursor: pointer;">/NishaCarRental</a>
+  </div>
+
+  <div style="background: #f1f0ff; padding: 16px 20px; border-radius: 12px; display: flex; align-items: center;">
+    <i class="fab fa-instagram" style="color:#3c2b84; font-size: 18px; margin-right: 15px;"></i>
+    <a href="https://instagram.com/nisha.cars" target="_blank" style="color: #3c2b84; text-decoration: none; cursor: pointer;">@nisha.cars</a>
+  </div>
+</div>
+
+
+    <!-- Right: Contact Form -->
+    <div style="flex: 1 1 400px;">
+      <h2 style="color: #3c2b84; margin-bottom: 20px;">Send a Message</h2>
+      <form id="contactForm">
+        <input type="text" name="name" placeholder="Your Name" required style="width: 100%; padding: 12px; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 8px; font-size: 15px;">
+        <input type="email" name="email" placeholder="Your Email" required style="width: 100%; padding: 12px; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 8px; font-size: 15px;">
+        <textarea name="message" rows="5" placeholder="Your Message" required style="width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 8px; font-size: 15px; margin-bottom: 20px;"></textarea>
+        <button type="submit" style="background-color: #3c2b84; color: white; padding: 12px 24px; font-size: 16px; border: none; border-radius: 8px; cursor: pointer;">Submit</button>
+      </form>
+    </div>
+
+  </section>
+
+  <!-- JavaScript for popup -->
+  <script>
+    document.getElementById("contactForm").addEventListener("submit", function(event) {
+      event.preventDefault(); // prevent actual form submission
+      alert("✅ Thank you! Your message has been sent.");
+      this.reset(); // optional: clear the form fields
+    });
+  </script>
+
+</body>
+
+</html>

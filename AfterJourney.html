@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Before You Book - Help</title>
+  <link rel="stylesheet" href="css-style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f7f7f7;
+      margin: 0;
+      padding: 40px;
+      color: #333;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+    }
+
+    h1 {
+      text-align: center;
+      color: #ead1ef;
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      color: #3b2e75;
+      margin-top: 30px;
+    }
+
+    p {
+      line-height: 1.7;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+    }
+
+    .note {
+      background: #fdf0f7;
+      padding: 15px;
+      border-left: 4px solid #dea9ea;
+      margin-top: 20px;
+      font-style: italic;
+    }
+    .faq-container {
+  margin-top: 30px;
+}
+
+.faq-container details {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+}
+
+.faq-container summary {
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 16px;
+  color: #3b2e75;
+}
+
+.faq-container p {
+  margin-top: 10px;
+  line-height: 1.6;
+}
+
+  </style>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+          <img src="Images/logo.png" alt="Logo" id="logo" onclick="window.location.href='index.html'">
+          <nav class="main-nav">
+            <ul>
+              <li><a href="Pricing.html">Pricing</a></li>
+              <li style="position: relative;">
+                <a href="Cars.html">Cars</a>
+                <div class="submenu-gallery">
+                   <!-- Small Cars block -->
+        <div style="text-align: center;">
+          <img src="Images/smallcars.png" alt="Small Cars" style="width: 140px; height: 90px;">
+          <p style="margin: 5px 0 0; font-size: 14px; color: #333;">Small Cars</p>
+        </div>
+                  <div style="text-align: center;">
+                    <img src="Images/Ecars.png" alt="Ecars" style="width: 140px; height: 90px;">
+                    <p style="margin: 5px 0 0; font-size: 14px; color: #333;">Electice cars</p>
+                  </div>
+                  <div style="text-align: center;">
+                    <img src="Images/SUVcars.png" alt="SUVcars: style="width: 140px; height: 90px;">
+                    <p style="margin: 5px 0 0; font-size: 14px; color: #333;">SUV cars</p>
+                  </div>
+                  <div style="text-align: center;">
+                    <img src="Images/Hybridecars.png" alt="Hybridecars: style="width: 140px; height: 90px;" >
+                    <p style="margin: 5px 0 0; font-size: 14px; color: #333;">Hybrid Cars</p>
+                  </div>
+                </div>
+              </li>
+              
+              <li><a href="Vans.html"  class="active">Vans</a>
+                <div class="submenu-gallery">
+                  <!-- Small Cars block -->
+       <div style="text-align: center;">
+         <img src="Images/1v.png" alt="Small Cars" style="width: 140px; height: 90px;">
+         <p style="margin: 5px 0 0; font-size: 14px; color: #333;">Car Derived vans</p>
+       </div>
+                 <div style="text-align: center;">
+                   <img src="Images/2v.png" alt="Ecars" style="width: 140px; height: 90px;">
+                   <p style="margin: 5px 0 0; font-size: 14px; color: #333;">Small vans</p>
+                 </div>
+                 <div style="text-align: center;">
+                   <img src="Images/3v.png" alt="SUVcars: style="width: 140px; height: 90px;">
+                   <p style="margin: 5px 0 0; font-size: 14px; color: #333;">Medium vans</p>
+                 </div>
+                 <div style="text-align: center;">
+                   <img src="Images/4v.png" alt="Hybridecars: style="width: 140px; height: 90px;" >
+                   <p style="margin: 5px 0 0; font-size: 14px; color: #333;">Large vans</p>
+                 </div>
+                 <div style="text-align: center;">
+                  <img src="Images/5v.png" alt="Hybridecars: style="width: 140px; height: 90px;" >
+                  <p style="margin: 5px 0 0; font-size: 14px; color: #333;">Crew Vans & 9 Seaters</p>
+                </div>
+               </div>
+               </li>
+              <li><a href="help.html">Help</a></li>
+              <li><a href="more.html">More</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="login.html">Login</a></li>
+              <li><a href="applynow.html" class="cta-button">Apply Now</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+  <!-- ✅ Hero Section with Left-Aligned Text on Top of Image -->
+<div style="position: relative; width: 100%; height: 300px; background-image: url('Images/j.jpg'); background-size: cover; background-position: center;">
+    <div style="
+      position: absolute;
+      top: 50%;
+      left: 40px;
+      transform: translateY(-50%);
+      color: white;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 25px 30px;
+      border-radius: 10px;
+      max-width: 500px;
+    ">
+      <p style="margin: 0; font-size: 16px; opacity: 0.9;">Help</p>
+      <h1 style="margin: 10px 0; font-size: 32px;">After your journey</h1>
+      <p style="margin: 0; font-size: 18px;">Answering your questions about
+        the end of your adventure and dropping off your vehicle</p>
+      <!-- ✅ Search Bar -->
+    <input type="text" id="faqSearch" placeholder="Search topics..." style="
+    width: 100%;
+    padding: 10px 15px;
+    border-radius: 6px;
+    border: none;
+    font-size: 16px;
+    outline: none;
+  ">
+    </div>
+    
+  </div>
+  
+
+  <h2>Frequently Asked Questions</h2>
+
+<div class="faq-container">
+
+  <details>
+    <summary>If I return the car early, will I get a refund?</summary>
+    <p>
+      We understand that plans can change. Here's what happens:
+      <br><br>
+      <strong>Returning More Than 48 Hours Early:</strong><br>
+      You're eligible for a partial refund. We'll deduct 48 hours of rental charges + 10% of the remaining hire term. The rest will be refunded to your original card. A processing fee (greater of 10% or $20) applies.
+      <br><br>
+      <strong>Returning Less Than 48 Hours Early:</strong><br>
+      No refund is provided, as the vehicle has been reserved for your full term.
+      <br><br>
+      <strong>Online Cancellations:</strong><br>
+      If cancelled online with 48+ hours' notice, the same rules apply. Admin fee: 2% of the refund amount.
+    </p>
+  </details>
+
+  <details>
+    <summary>What if I’m running late and can’t return the car at the stated time on the contract?</summary>
+    <p>
+      You'll be charged an hourly rate for up to 4 hours. After that, a full day's rental and insurance will be charged.
+    </p>
+  </details>
+
+  <details>
+    <summary>What happens if I’m running late and return my car without a full tank of petrol?</summary>
+    <p>
+      We can refill it for you. You’ll be charged the fuel cost plus a possible $35 service fee depending on how much fuel is needed.
+    </p>
+  </details>
+
+  <details>
+    <summary>I've forgotten to pay a toll during my trip - what happens now?</summary>
+    <p>
+      If you opted for our $3/day Total Road Care package, tolls are covered. No need to worry. Refer to our toll guide for more info.
+    </p>
+  </details>
+
+  <details>
+    <summary>If I return my rental to your city offices, will your shuttle be able to take me to the airport or my accommodation?</summary>
+    <p>
+      Yes — for Auckland and Christchurch airports only, between 8am and 5pm, 7 days a week. Other branches are within walking distance of the terminals.
+    </p>
+  </details>
+
+  <details>
+    <summary>Do I have to clean my rental car before I drop it back off?</summary>
+    <p>
+      No need to fully clean it. Just remove rubbish and personal items. If the car is muddy, please rinse it off before returning.
+    </p>
+  </details>
+
+</div>
+
+  
+  </div>
+  <script>
+    const searchInput = document.getElementById('faqSearch');
+    const faqItems = document.querySelectorAll('.faq-container details');
+  
+    searchInput.addEventListener('input', function () {
+      const query = this.value.toLowerCase();
+  
+      faqItems.forEach(faq => {
+        const question = faq.querySelector('summary').innerText.toLowerCase();
+        if (question.includes(query)) {
+          faq.style.display = '';
+        } else {
+          faq.style.display = 'none';
+        }
+      });
+    });
+  </script>
+  
+</body>
+</html>

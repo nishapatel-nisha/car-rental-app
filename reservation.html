@@ -1,0 +1,31 @@
+<!-- car-rental-app/reservation.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Car Reservation</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <img src="assets/logo.png" alt="Logo" onclick="window.location.href='index.html'"/>
+  </header>
+
+  <div id="carInfo"></div>
+
+  <form id="reservationForm" style="display:none;">
+    <label>Name: <input type="text" id="name" required /></label>
+    <label>Phone: <input type="text" id="phone" required /></label>
+    <label>Email: <input type="email" id="email" required /></label>
+    <label>Driver's License: <input type="text" id="license" required /></label>
+    <label>Start Date: <input type="date" id="startDate" required /></label>
+    <label>Days: <input type="number" id="days" min="1" required /></label>
+    <p id="totalPrice"></p>
+    <button type="submit" id="submitBtn" disabled>Submit</button>
+    <button type="button" onclick="cancelReservation()">Cancel</button>
+  </form>
+
+  <script src="js/reservation.js"></script>
+</body>
+</html>

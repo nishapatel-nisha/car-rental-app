@@ -1,0 +1,497 @@
+<!-- car-rental-app/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Car Rental</title>
+  <link rel="stylesheet" href="css-style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <img src="Images/logo.png" alt="Logo" id="logo" onclick="window.location.href='index.html'">
+      <nav class="main-nav">
+        <ul>
+          <li><a href="Pricing.html">Pricing</a></li>
+          <li style="position: relative;">
+            <a href="Cars.html">Cars</a>
+            <div class="submenu-gallery">
+               <!-- Small Cars block -->
+    <div style="text-align: center;">
+      <img src="Images/smallcars.png" alt="Small Cars" style="width: 140px; height: 90px;">
+      <p style="margin: 5px 0 0; font-size: 14px; color: #333;">Small Cars</p>
+    </div>
+              <div style="text-align: center;">
+                <img src="Images/Ecars.png" alt="Ecars" style="width: 140px; height: 90px;">
+                <p style="margin: 5px 0 0; font-size: 14px; color: #333;">Electice cars</p>
+              </div>
+              <div style="text-align: center;">
+                <img src="Images/SUVcars.png" alt="SUVcars: style="width: 140px; height: 90px;">
+                <p style="margin: 5px 0 0; font-size: 14px; color: #333;">SUV cars</p>
+              </div>
+              <div style="text-align: center;">
+                <img src="Images/Hybridecars.png" alt="Hybridecars: style="width: 140px; height: 90px;" >
+                <p style="margin: 5px 0 0; font-size: 14px; color: #333;">Hybrid Cars</p>
+              </div>
+            </div>
+          </li>
+          
+          <li><a href="Vans.html"  class="active">Vans</a>
+            <div class="submenu-gallery">
+              <!-- Small Cars block -->
+   <div style="text-align: center;">
+     <img src="Images/1v.png" alt="Small Cars" style="width: 140px; height: 90px;">
+     <p style="margin: 5px 0 0; font-size: 14px; color: #333;">Car Derived vans</p>
+   </div>
+             <div style="text-align: center;">
+               <img src="Images/2v.png" alt="Ecars" style="width: 140px; height: 90px;">
+               <p style="margin: 5px 0 0; font-size: 14px; color: #333;">Small vans</p>
+             </div>
+             <div style="text-align: center;">
+               <img src="Images/3v.png" alt="SUVcars: style="width: 140px; height: 90px;">
+               <p style="margin: 5px 0 0; font-size: 14px; color: #333;">Medium vans</p>
+             </div>
+             <div style="text-align: center;">
+               <img src="Images/4v.png" alt="Hybridecars: style="width: 140px; height: 90px;" >
+               <p style="margin: 5px 0 0; font-size: 14px; color: #333;">Large vans</p>
+             </div>
+             <div style="text-align: center;">
+              <img src="Images/5v.png" alt="Hybridecars: style="width: 140px; height: 90px;" >
+              <p style="margin: 5px 0 0; font-size: 14px; color: #333;">Crew Vans & 9 Seaters</p>
+            </div>
+           </div>
+           </li>
+          <li><a href="help.html">Help</a></li>
+          <li><a href="more.html">More</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="applynow.html" class="cta-button">Apply Now</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+<main style="padding: 60px 20px; font-family: 'Poppins', sans-serif; background: linear-gradient(to bottom, #fff 0%, #f1f1f1 100%);">
+ 
+<section style="margin-bottom: 60px; display: flex; gap: 20px; align-items: center; flex-wrap: wrap; background: white; border-radius: 12px; box-shadow: 0 6px 20px rgba(0,0,0,0.06); padding: 30px;">
+  <div id="carSlides" style="display: flex; align-items: center; gap: 30px;">
+
+    <!-- Slide 1: Toyota Yaris -->
+    <div class="car-slide" style="display: flex; width: 100%; align-items: center;">
+      <div style="flex: 1; text-align: center;">
+        <img src="Images/smallcars.png" alt="Toyota Yaris" style="width: 220px; border-radius: 10px;">
+        <p style="margin-top: 8px; font-size: 14px; color: #777;">Toyota Yaris</p>
+      </div>
+      <div style="flex: 2; text-align: left;">
+        <h2 style="color: #ffc107; font-size: 20px;">🚗 Small Cars</h2>
+        <p style="font-size: 14px;">Perfect for city driving. Fuel-efficient, compact, and easy to park — ideal for solo or duo trips.</p>
+        <ul style="padding-left: 18px; font-size: 14px;">
+          <li><strong>Popcar Member:</strong> $8.90/hr or $79/day (100km incl)</li>
+          <li><strong>Popcar Casual:</strong> $12.90/hr or $99/day</li>
+          <li><strong>Seats:</strong> 5 | <strong>Doors:</strong> 5 | <strong>Fuel:</strong> Petrol | <strong>Gear:</strong> Auto</li>
+        </ul>
+        <a href="applynow.html?car=Toyota%20Yaris" 
+   style="background: #ffc107; color: white; padding: 8px 16px; border-radius: 6px; text-decoration: none; font-weight: 500; font-size: 14px;">
+   BOOK NOW
+</a>
+
+      </div>
+    </div>
+
+    <!-- Slide 2: Hyundai i20 -->
+    <div class="car-slide" style="display: none; width: 100%; align-items: center;">
+      <div style="flex: 1; text-align: center;">
+        <img src="Images/sm2.jpg" alt="Hyundai i20" style="width: 220px; border-radius: 10px;">
+        <p style="margin-top: 8px; font-size: 14px; color: #777;">Hyundai i20</p>
+      </div>
+      <div style="flex: 2; text-align: left;">
+        <h2 style="color: #ffc107; font-size: 20px;">🚗 Small Cars</h2>
+        <p style="font-size: 14px;">Smart and agile. Offers comfort and practicality with an efficient drive experience.</p>
+        <ul style="padding-left: 18px; font-size: 14px;">
+          <li><strong>Popcar Member:</strong> $9.50/hr or $85/day</li>
+          <li><strong>Popcar Casual:</strong> $13.90/hr or $105/day</li>
+          <li><strong>Seats:</strong> 5 | <strong>Doors:</strong> 5 | <strong>Fuel:</strong> Petrol | <strong>Gear:</strong> Manual</li>
+        </ul>
+        <a href="applynow.html?car=Hyundai%20i20" style="background: #ffc107; color: white; padding: 8px 16px; border-radius: 6px; text-decoration: none; font-weight: 500; font-size: 14px;">BOOK NOW</a>
+      </div>
+    </div>
+
+    <!-- Slide 3: Kia Picanto -->
+    <div class="car-slide" style="display: none; width: 100%; align-items: center;">
+      <div style="flex: 1; text-align: center;">
+        <img src="Images/sm3.jpg" alt="Kia Picanto" style="width: 220px; border-radius: 10px;">
+        <p style="margin-top: 8px; font-size: 14px; color: #777;">Kia Picanto</p>
+      </div>
+      <div style="flex: 2; text-align: left;">
+        <h2 style="color: #ffc107; font-size: 20px;">🚗 Small Cars</h2>
+        <p style="font-size: 14px;">Tiny but mighty. Excellent for navigating traffic and tight parking with comfort.</p>
+        <ul style="padding-left: 18px; font-size: 14px;">
+          <li><strong>Popcar Member:</strong> $8.50/hr or $75/day</li>
+          <li><strong>Popcar Casual:</strong> $12.00/hr or $95/day</li>
+          <li><strong>Seats:</strong> 4 | <strong>Doors:</strong> 5 | <strong>Fuel:</strong> Petrol | <strong>Gear:</strong> Auto</li>
+        </ul>
+        <a href="applynow.html?car=Kia%20Picanto" style="background: #ffc107; color: white; padding: 8px 16px; border-radius: 6px; text-decoration: none; font-weight: 500; font-size: 14px;">BOOK NOW</a>
+      </div>
+     
+
+    </div>
+    
+  </div>
+ <!-- Navigation Buttons -->
+  <div style="position: absolute; border-bottom: 20px; right: 20px; display: flex; gap: 10px;">
+    <button onclick="prevCar()" style="background: #ffc107; color: white; border: none; padding: 6px 10px; font-size: 14px; border-radius: 50%; width: 34px; height: 34px; cursor: pointer; box-shadow: 0 2px 6px rgba(0,0,0,0.15);">←</button>
+    <button onclick="nextCar()" style="background: #ffc107; color: white; border: none; padding: 6px 10px; font-size: 14px; border-radius: 50%; width: 34px; height: 34px; cursor: pointer; box-shadow: 0 2px 6px rgba(0,0,0,0.15);">→</button>
+  </div>
+</section>
+
+<script>
+  const slides = document.querySelectorAll('#carSlides .car-slide');
+  let current = 0;
+  function showCar(index) {
+    slides.forEach((s, i) => s.style.display = i === index ? 'flex' : 'none');
+  }
+  function nextCar() {
+    current = (current + 1) % slides.length;
+    showCar(current);
+  }
+  function prevCar() {
+    current = (current - 1 + slides.length) % slides.length;
+    showCar(current);
+  }
+  showCar(current);
+</script>
+ <!-- SUV Cars Section (with 5 car slides, image on right) -->
+<section style="margin-bottom: 60px; display: flex; flex-direction: row; gap: 20px; align-items: center; flex-wrap: wrap; background: white; border-radius: 12px; box-shadow: 0 6px 20px rgba(0,0,0,0.06); padding: 30px; position: relative;">
+  <div id="suvSlides" style="display: flex; align-items: center; gap: 30px; width: 100%;">
+    <!-- Slide 1 -->
+    <div class="car-slide" style="display: flex; width: 100%; align-items: center;">
+      <div style="flex: 2; text-align: left;">
+        <h2 style="color: #ffc107; font-size: 20px;">🚙 SUV Cars</h2>
+        <p style="font-size: 14px;">Built for adventure and family comfort. All-wheel drive, elevated seating, and roomy interior.</p>
+        <ul style="padding-left: 18px; font-size: 14px;">
+          <li><strong>Popcar Member:</strong> $11.90/hr or $105/day</li>
+          <li><strong>Popcar Casual:</strong> $15.50/hr or $125/day</li>
+          <li><strong>Seats:</strong> 5 | <strong>Doors:</strong> 5 | <strong>Fuel:</strong> Petrol | <strong>Gear:</strong> Auto</li>
+        </ul>
+        <a href="applynow.html?car=Toyota%20RAV4" style="background: #ffc107; color: white; padding: 8px 16px; border-radius: 6px; text-decoration: none; font-weight: 500; font-size: 14px;">BOOK NOW</a>
+      </div>
+      <div style="flex: 1; text-align: center;">
+        <img src="Images/suv1.jpg" alt="Toyota RAV4" style="width: 220px; border-radius: 10px;">
+        <p style="margin-top: 8px; font-size: 14px; color: #777;">Toyota RAV4</p>
+      </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="car-slide" style="display: none; width: 100%; align-items: center;">
+      <div style="flex: 2; text-align: left;">
+        <h2 style="color: #ffc107; font-size: 20px;">🚙 SUV Cars</h2>
+        <p style="font-size: 14px;">Luxury and power combined. Designed for longer drives with elegant interiors.</p>
+        <ul style="padding-left: 18px; font-size: 14px;">
+          <li><strong>Popcar Member:</strong> $13.90/hr or $119/day</li>
+          <li><strong>Popcar Casual:</strong> $17.00/hr or $140/day</li>
+          <li><strong>Seats:</strong> 7 | <strong>Doors:</strong> 5 | <strong>Fuel:</strong> Diesel | <strong>Gear:</strong> Auto</li>
+        </ul>
+        <a href="applynow.html?car=Mazda%20CX-9" style="background: #ffc107; color: white; padding: 8px 16px; border-radius: 6px; text-decoration: none; font-weight: 500; font-size: 14px;">BOOK NOW</a>
+      </div>
+      <div style="flex: 1; text-align: center;">
+        <img src="Images/suv2.jpg" alt="Mazda CX-9" style="width: 220px; border-radius: 10px;">
+        <p style="margin-top: 8px; font-size: 14px; color: #777;">Mazda CX-9</p>
+      </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="car-slide" style="display: none; width: 100%; align-items: center;">
+      <div style="flex: 2; text-align: left;">
+        <h2 style="color: #ffc107; font-size: 20px;">🚙 SUV Cars</h2>
+        <p style="font-size: 14px;">Sleek urban SUV. Smooth handling, modern tech, and compact body for tight spaces.</p>
+        <ul style="padding-left: 18px; font-size: 14px;">
+          <li><strong>Popcar Member:</strong> $10.90/hr or $99/day</li>
+          <li><strong>Popcar Casual:</strong> $14.90/hr or $119/day</li>
+          <li><strong>Seats:</strong> 5 | <strong>Doors:</strong> 5 | <strong>Fuel:</strong> Petrol | <strong>Gear:</strong> Auto</li>
+        </ul>
+        <a href="applynow.html?car=Honda%20HR-V" style="background: #ffc107; color: white; padding: 8px 16px; border-radius: 6px; text-decoration: none; font-weight: 500; font-size: 14px;">BOOK NOW</a>
+      </div>
+      <div style="flex: 1; text-align: center;">
+        <img src="Images/suv3.jpg" alt="Honda HR-V" style="width: 220px; border-radius: 10px;">
+        <p style="margin-top: 8px; font-size: 14px; color: #777;">Honda HR-V</p>
+      </div>
+    </div>
+
+    <!-- Slide 4 -->
+    <div class="car-slide" style="display: none; width: 100%; align-items: center;">
+      <div style="flex: 2; text-align: left;">
+        <h2 style="color: #ffc107; font-size: 20px;">🚙 SUV Cars</h2>
+        <p style="font-size: 14px;">Premium space and comfort. Dual-zone climate, infotainment, and plenty of boot room.</p>
+        <ul style="padding-left: 18px; font-size: 14px;">
+          <li><strong>Popcar Member:</strong> $12.90/hr or $110/day</li>
+          <li><strong>Popcar Casual:</strong> $16.20/hr or $130/day</li>
+          <li><strong>Seats:</strong> 5 | <strong>Doors:</strong> 5 | <strong>Fuel:</strong> Hybrid | <strong>Gear:</strong> Auto</li>
+        </ul>
+        <a href="applynow.html?car=Sabaru%20Outback" style="background: #ffc107; color: white; padding: 8px 16px; border-radius: 6px; text-decoration: none; font-weight: 500; font-size: 14px;">BOOK NOW</a>
+      </div>
+      <div style="flex: 1; text-align: center;">
+        <img src="Images/suv4.jpg" alt="Subaru Outback" style="width: 220px; border-radius: 10px;">
+        <p style="margin-top: 8px; font-size: 14px; color: #777;">Subaru Outback</p>
+      </div>
+    </div>
+
+    <!-- Slide 5 -->
+    <div class="car-slide" style="display: none; width: 100%; align-items: center;">
+      <div style="flex: 2; text-align: left;">
+        <h2 style="color: #ffc107; font-size: 20px;">🚙 SUV Cars</h2>
+        <p style="font-size: 14px;">Tough and reliable. Built for rugged terrain and heavy-duty family adventures.</p>
+        <ul style="padding-left: 18px; font-size: 14px;">
+          <li><strong>Popcar Member:</strong> $14.00/hr or $130/day</li>
+          <li><strong>Popcar Casual:</strong> $17.90/hr or $150/day</li>
+          <li><strong>Seats:</strong> 7 | <strong>Doors:</strong> 5 | <strong>Fuel:</strong> Diesel | <strong>Gear:</strong> Manual</li>
+        </ul>
+        <a href="applynow.html?car=Ford%20Everest" style="background: #ffc107; color: white; padding: 8px 16px; border-radius: 6px; text-decoration: none; font-weight: 500; font-size: 14px;">BOOK NOW</a>
+      </div>
+      <div style="flex: 1; text-align: center;">
+        <img src="Images/suv5.jpg" alt="Ford Everest" style="width: 220px; border-radius: 10px;">
+        <p style="margin-top: 8px; font-size: 14px; color: #777;">Ford Everest</p>
+      </div>
+    </div>
+  </div>
+  <div style="position: absolute; bottom: 10px; right: 10px; display: flex; gap: 10px;">
+    <button onclick="prevSUV()" style="background: #ffc107; color: white; border: none; padding: 6px 10px; font-size: 14px; border-radius: 50%; width: 34px; height: 34px; cursor: pointer; box-shadow: 0 2px 6px rgba(0,0,0,0.15);">←</button>
+    <button onclick="nextSUV()" style="background: #ffc107; color: white; border: none; padding: 6px 10px; font-size: 14px; border-radius: 50%; width: 34px; height: 34px; cursor: pointer; box-shadow: 0 2px 6px rgba(0,0,0,0.15);">→</button>
+  </div>
+</section>
+
+<script>
+  const suvSlides = document.querySelectorAll('#suvSlides .car-slide');
+  let suvIndex = 0;
+  function showSUV(index) {
+    suvSlides.forEach((s, i) => s.style.display = i === index ? 'flex' : 'none');
+  }
+  function nextSUV() {
+    suvIndex = (suvIndex + 1) % suvSlides.length;
+    showSUV(suvIndex);
+  }
+  function prevSUV() {
+    suvIndex = (suvIndex - 1 + suvSlides.length) % suvSlides.length;
+    showSUV(suvIndex);
+  }
+  showSUV(suvIndex);
+</script>
+
+ <!-- Electric Cars Section (Left Image, Right Details) -->
+<section style="margin-bottom: 60px; display: flex; flex-direction: row; gap: 20px; align-items: center; flex-wrap: wrap; background: white; border-radius: 12px; box-shadow: 0 6px 20px rgba(0,0,0,0.06); padding: 30px; position: relative;">
+  <div id="electricSlides" style="display: flex; align-items: center; gap: 30px; width: 100%;">
+    <!-- Slide 1 -->
+    <div class="car-slide" style="display: flex; width: 100%; align-items: center;">
+      <div style="flex: 1; text-align: center;">
+        <img src="Images/ev1.jpg" alt="Nissan Leaf" style="width: 220px; border-radius: 10px;">
+        <p style="margin-top: 8px; font-size: 14px; color: #777;">Nissan Leaf</p>
+      </div>
+      <div style="flex: 2; text-align: left;">
+        <h2 style="color: #ffc107; font-size: 20px;">⚡ Electric Cars</h2>
+        <p style="font-size: 14px;">Eco-friendly and efficient. Great for city drives and reducing carbon emissions.</p>
+        <ul style="padding-left: 18px; font-size: 14px;">
+          <li><strong>Popcar Member:</strong> $10.50/hr or $95/day</li>
+          <li><strong>Popcar Casual:</strong> $13.90/hr or $110/day</li>
+          <li><strong>Seats:</strong> 5 | <strong>Range:</strong> 300km | <strong>Charge:</strong> Fast Charge | <strong>Gear:</strong> Auto</li>
+        </ul>
+        <a href="applynow.html?car=Nissan%20Leaf" style="background: #ffc107; color: white; padding: 8px 16px; border-radius: 6px; text-decoration: none; font-weight: 500; font-size: 14px;">BOOK NOW</a>
+      </div>
+    </div>
+    <!-- Slide 2 -->
+    <div class="car-slide" style="display: none; width: 100%; align-items: center;">
+      <div style="flex: 1; text-align: center;">
+        <img src="Images/ev2.jpg" alt="Hyundai Ioniq" style="width: 220px; border-radius: 10px;">
+        <p style="margin-top: 8px; font-size: 14px; color: #777;">Hyundai Ioniq</p>
+      </div>
+      <div style="flex: 2; text-align: left;">
+        <h2 style="color: #ffc107; font-size: 20px;">⚡ Electric Cars</h2>
+        <p style="font-size: 14px;">Compact and quiet. The future of urban mobility with zero emissions.</p>
+        <ul style="padding-left: 18px; font-size: 14px;">
+          <li><strong>Popcar Member:</strong> $9.90/hr or $89/day</li>
+          <li><strong>Popcar Casual:</strong> $12.50/hr or $105/day</li>
+          <li><strong>Seats:</strong> 4 | <strong>Range:</strong> 250km | <strong>Charge:</strong> Standard | <strong>Gear:</strong> Auto</li>
+        </ul>
+        <a href="applynow.html?car=Hyundai%20Ioniq" style="background: #ffc107; color: white; padding: 8px 16px; border-radius: 6px; text-decoration: none; font-weight: 500; font-size: 14px;">BOOK NOW</a>
+      </div>
+    </div>
+    <!-- Slide 3 -->
+    <div class="car-slide" style="display: none; width: 100%; align-items: center;">
+      <div style="flex: 1; text-align: center;">
+        <img src="Images/ev3.jpg" alt="Tesla Model 3" style="width: 220px; border-radius: 10px;">
+        <p style="margin-top: 8px; font-size: 14px; color: #777;">Tesla Model 3</p>
+      </div>
+      <div style="flex: 2; text-align: left;">
+        <h2 style="color: #ffc107; font-size: 20px;">⚡ Electric Cars</h2>
+        <p style="font-size: 14px;">Stylish and smart. Ideal for weekend trips and long-distance electric travel.</p>
+        <ul style="padding-left: 18px; font-size: 14px;">
+          <li><strong>Popcar Member:</strong> $12.90/hr or $109/day</li>
+          <li><strong>Popcar Casual:</strong> $16.00/hr or $129/day</li>
+          <li><strong>Seats:</strong> 5 | <strong>Range:</strong> 420km | <strong>Charge:</strong> Fast | <strong>Gear:</strong> Auto</li>
+        </ul>
+        <a href="applynow.html?car=Tesla%20Modle3" style="background: #ffc107; color: white; padding: 8px 16px; border-radius: 6px; text-decoration: none; font-weight: 500; font-size: 14px;">BOOK NOW</a>
+      </div>
+    </div>
+    <!-- Slide 4 -->
+    <div class="car-slide" style="display: none; width: 100%; align-items: center;">
+      <div style="flex: 1; text-align: center;">
+        <img src="Images/ev4.jpg" alt="Renault Zoe" style="width: 220px; border-radius: 10px;">
+        <p style="margin-top: 8px; font-size: 14px; color: #777;">Renault Zoe</p>
+      </div>
+      <div style="flex: 2; text-align: left;">
+        <h2 style="color: #ffc107; font-size: 20px;">⚡ Electric Cars</h2>
+        <p style="font-size: 14px;">Smart city car with affordable pricing. Suitable for short daily commutes.</p>
+        <ul style="padding-left: 18px; font-size: 14px;">
+          <li><strong>Popcar Member:</strong> $8.50/hr or $75/day</li>
+          <li><strong>Popcar Casual:</strong> $11.20/hr or $90/day</li>
+          <li><strong>Seats:</strong> 4 | <strong>Range:</strong> 180km | <strong>Charge:</strong> Home | <strong>Gear:</strong> Auto</li>
+        </ul>
+        <a href="applynow.html?car=Renault%20Zoe" style="background: #ffc107; color: white; padding: 8px 16px; border-radius: 6px; text-decoration: none; font-weight: 500; font-size: 14px;">BOOK NOW</a>
+      </div>
+    </div>
+    <!-- Slide 5 -->
+    <div class="car-slide" style="display: none; width: 100%; align-items: center;">
+      <div style="flex: 1; text-align: center;">
+        <img src="Images/ev5.jpg" alt="Polestar 2" style="width: 220px; border-radius: 10px;">
+        <p style="margin-top: 8px; font-size: 14px; color: #777;">Polestar 2</p>
+      </div>
+      <div style="flex: 2; text-align: left;">
+        <h2 style="color: #ffc107; font-size: 20px;">⚡ Electric Cars</h2>
+        <p style="font-size: 14px;">Performance EV for long trips. Smooth acceleration and intelligent safety systems.</p>
+        <ul style="padding-left: 18px; font-size: 14px;">
+          <li><strong>Popcar Member:</strong> $13.90/hr or $125/day</li>
+          <li><strong>Popcar Casual:</strong> $17.00/hr or $140/day</li>
+          <li><strong>Seats:</strong> 5 | <strong>Range:</strong> 450km | <strong>Charge:</strong> Supercharge | <strong>Gear:</strong> Auto</li>
+        </ul>
+        <a href="applynow.html?car=Polestar%" style="background: #ffc107; color: white; padding: 8px 16px; border-radius: 6px; text-decoration: none; font-weight: 500; font-size: 14px;">BOOK NOW</a>
+      </div>
+    </div>
+  </div>
+  <div style="position: absolute; bottom: 10px; right: 10px; display: flex; gap: 10px;">
+    <button onclick="prevEV()" style="background: #ffc107; color: white; border: none; padding: 6px 10px; font-size: 14px; border-radius: 50%; width: 34px; height: 34px; cursor: pointer; box-shadow: 0 2px 6px rgba(0,0,0,0.15);">←</button>
+    <button onclick="nextEV()" style="background: #ffc107; color: white; border: none; padding: 6px 10px; font-size: 14px; border-radius: 50%; width: 34px; height: 34px; cursor: pointer; box-shadow: 0 2px 6px rgba(0,0,0,0.15);">→</button>
+  </div>
+</section>
+
+<script>
+  const electricSlides = document.querySelectorAll('#electricSlides .car-slide');
+  let evIndex = 0;
+  function showEV(index) {
+    electricSlides.forEach((s, i) => s.style.display = i === index ? 'flex' : 'none');
+  }
+  function nextEV() {
+    evIndex = (evIndex + 1) % electricSlides.length;
+    showEV(evIndex);
+  }
+  function prevEV() {
+    evIndex = (evIndex - 1 + electricSlides.length) % electricSlides.length;
+    showEV(evIndex);
+  }
+  showEV(evIndex);
+</script>
+  <!-- Hybrid Cars Section (Right Image, Left Details) -->
+<section style="margin-bottom: 60px; display: flex; flex-direction: row-reverse; gap: 20px; align-items: center; flex-wrap: wrap; background: white; border-radius: 12px; box-shadow: 0 6px 20px rgba(0,0,0,0.06); padding: 30px; position: relative;">
+  <div id="hybridSlides" style="display: flex; align-items: center; gap: 30px; width: 100%;">
+    <!-- Slide 1 -->
+    <div class="car-slide" style="display: flex; width: 100%; align-items: center;">
+      <div style="flex: 2; text-align: left;">
+        <h2 style="color: #ffc107; font-size: 20px;">🔋 Hybrid Cars</h2>
+        <p style="font-size: 14px;">Efficient and flexible. Hybrid cars use both fuel and electricity to optimize mileage.</p>
+        <ul style="padding-left: 18px; font-size: 14px;">
+          <li><strong>Member Price:</strong> $11.00/hr or $100/day</li>
+          <li><strong>Casual Price:</strong> $14.50/hr or $120/day</li>
+          <li><strong>Seats:</strong> 5 | <strong>Fuel:</strong> Hybrid | <strong>Gear:</strong> Auto</li>
+        </ul>
+        <a href="applynow.html?car=Toyota%20Prius" style="background: #ffc107; color: white; padding: 8px 16px; border-radius: 6px; text-decoration: none; font-weight: 500; font-size: 14px;">BOOK NOW</a>
+      </div>
+      <div style="flex: 1; text-align: center;">
+        <img src="Images/hybrid1.jpg" alt="Toyota Prius" style="width: 220px; border-radius: 10px;">
+        <p style="margin-top: 8px; font-size: 14px; color: #777;">Toyota Prius</p>
+      </div>
+    </div>
+    <!-- Slide 2 -->
+    <div class="car-slide" style="display: none; width: 100%; align-items: center;">
+      <div style="flex: 2; text-align: left;">
+        <h2 style="color: #ffc107; font-size: 20px;">🔋 Hybrid Cars</h2>
+        <p style="font-size: 14px;">Compact hybrid sedan perfect for commuting with low emissions.</p>
+        <ul style="padding-left: 18px; font-size: 14px;">
+          <li><strong>Member Price:</strong> $10.00/hr or $95/day</li>
+          <li><strong>Casual Price:</strong> $13.00/hr or $110/day</li>
+          <li><strong>Seats:</strong> 5 | <strong>Fuel:</strong> Hybrid | <strong>Gear:</strong> Auto</li>
+        </ul>
+        <a href="applynow.html?car=Honda%20Insight" style="background: #ffc107; color: white; padding: 8px 16px; border-radius: 6px; text-decoration: none; font-weight: 500; font-size: 14px;">BOOK NOW</a>
+      </div>
+      <div style="flex: 1; text-align: center;">
+        <img src="Images/hybrid2.jpg" alt="Honda Insight" style="width: 220px; border-radius: 10px;">
+        <p style="margin-top: 8px; font-size: 14px; color: #777;">Honda Insight</p>
+      </div>
+    </div>
+    <!-- Slide 3 -->
+    <div class="car-slide" style="display: none; width: 100%; align-items: center;">
+      <div style="flex: 2; text-align: left;">
+        <h2 style="color: #ffc107; font-size: 20px;">🔋 Hybrid Cars</h2>
+        <p style="font-size: 14px;">Spacious and smart SUV combining power and economy in one ride.</p>
+        <ul style="padding-left: 18px; font-size: 14px;">
+          <li><strong>Member Price:</strong> $13.00/hr or $115/day</li>
+          <li><strong>Casual Price:</strong> $16.00/hr or $130/day</li>
+          <li><strong>Seats:</strong> 7 | <strong>Fuel:</strong> Hybrid | <strong>Gear:</strong> Auto</li>
+        </ul>
+        <a href="applynow.html?car=Toyota%20Highlander%20Hybrid" style="background: #ffc107; color: white; padding: 8px 16px; border-radius: 6px; text-decoration: none; font-weight: 500; font-size: 14px;">BOOK NOW</a>
+      </div>
+      <div style="flex: 1; text-align: center;">
+        <img src="Images/hybrid3.jpg" alt="Toyota Highlander Hybrid" style="width: 220px; border-radius: 10px;">
+        <p style="margin-top: 8px; font-size: 14px; color: #777;">Toyota Highlander Hybrid</p>
+      </div>
+    </div>
+    <!-- Slide 4 -->
+    <div class="car-slide" style="display: none; width: 100%; align-items: center;">
+      <div style="flex: 2; text-align: left;">
+        <h2 style="color: #ffc107; font-size: 20px;">🔋 Hybrid Cars</h2>
+        <p style="font-size: 14px;">Stylish hybrid hatchback built for efficiency and everyday convenience.</p>
+        <ul style="padding-left: 18px; font-size: 14px;">
+          <li><strong>Member Price:</strong> $9.50/hr or $90/day</li>
+          <li><strong>Casual Price:</strong> $12.50/hr or $105/day</li>
+          <li><strong>Seats:</strong> 5 | <strong>Fuel:</strong> Hybrid | <strong>Gear:</strong> Auto</li>
+        </ul>
+        <a href="applynow.html?car=Hyundai%20Ioniq%20Hybrid" style="background: #ffc107; color: white; padding: 8px 16px; border-radius: 6px; text-decoration: none; font-weight: 500; font-size: 14px;">BOOK NOW</a>
+      </div>
+      <div style="flex: 1; text-align: center;">
+        <img src="Images/hybrid4.jpg" alt="Hyundai Ioniq Hybrid" style="width: 220px; border-radius: 10px;">
+        <p style="margin-top: 8px; font-size: 14px; color: #777;">Hyundai Ioniq Hybrid</p>
+      </div>
+    </div>
+  </div>
+  <div style="position: absolute; bottom: 10px; right: 10px; display: flex; gap: 10px;">
+    <button onclick="prevHybrid()" style="background: #ffc107; color: white; border: none; padding: 6px 10px; font-size: 14px; border-radius: 50%; width: 34px; height: 34px; cursor: pointer; box-shadow: 0 2px 6px rgba(0,0,0,0.15);">←</button>
+    <button onclick="nextHybrid()" style="background: #ffc107; color: white; border: none; padding: 6px 10px; font-size: 14px; border-radius: 50%; width: 34px; height: 34px; cursor: pointer; box-shadow: 0 2px 6px rgba(0,0,0,0.15);">→</button>
+  </div>
+</section>
+
+<script>
+  const hybridSlides = document.querySelectorAll('#hybridSlides .car-slide');
+  let hybridIndex = 0;
+  function showHybrid(index) {
+    hybridSlides.forEach((s, i) => s.style.display = i === index ? 'flex' : 'none');
+  }
+  function nextHybrid() {
+    hybridIndex = (hybridIndex + 1) % hybridSlides.length;
+    showHybrid(hybridIndex);
+  }
+  function prevHybrid() {
+    hybridIndex = (hybridIndex - 1 + hybridSlides.length) % hybridSlides.length;
+    showHybrid(hybridIndex);
+  }
+  showHybrid(hybridIndex);
+</script>
+
+</main>
+
+
+<footer style="text-align: center; padding: 30px 0; background-color: #222; color: white;">
+  <p>&copy; 2025 CarRental. All rights reserved. | Powered by AJAX & JSON</p>
+</footer>
+ 
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,186 @@
+<!-- car-rental-app/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Car Rental</title>
+  <link rel="stylesheet" href="css-style.css">
+  <script src="search-enhanced.js" defer></script>
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <img src="Images/logo.png" alt="Logo" id="logo" onclick="window.location.href='index.html'">
+      <nav class="main-nav">
+        <ul>
+          <li><a href="Pricing.html">Pricing</a></li>
+          <li style="position: relative;">
+            <a href="Cars.html">Cars</a>
+            <div class="submenu-gallery">
+               <!-- Small Cars block -->
+    <div style="text-align: center;">
+      <img src="Images/smallcars.png" alt="Small Cars" style="width: 140px; height: 90px;">
+      <p style="margin: 5px 0 0; font-size: 14px; color: #333;">Small Cars</p>
+    </div>
+              <div style="text-align: center;">
+                <img src="Images/Ecars.png" alt="Ecars" style="width: 140px; height: 90px;">
+                <p style="margin: 5px 0 0; font-size: 14px; color: #333;">Electice cars</p>
+              </div>
+              <div style="text-align: center;">
+                <img src="Images/SUVcars.png" alt="SUVcars: style="width: 140px; height: 90px;">
+                <p style="margin: 5px 0 0; font-size: 14px; color: #333;">SUV cars</p>
+              </div>
+              <div style="text-align: center;">
+                <img src="Images/Hybridecars.png" alt="Hybridecars: style="width: 140px; height: 90px;" >
+                <p style="margin: 5px 0 0; font-size: 14px; color: #333;">Hybrid Cars</p>
+              </div>
+            </div>
+          </li>
+          
+          <li><a href="Vans.html"  class="active">Vans</a>
+            <div class="submenu-gallery">
+              <!-- Small Cars block -->
+   <div style="text-align: center;">
+     <img src="Images/1v.png" alt="Small Cars" style="width: 140px; height: 90px;">
+     <p style="margin: 5px 0 0; font-size: 14px; color: #333;">Car Derived vans</p>
+   </div>
+             <div style="text-align: center;">
+               <img src="Images/2v.png" alt="Ecars" style="width: 140px; height: 90px;">
+               <p style="margin: 5px 0 0; font-size: 14px; color: #333;">Small vans</p>
+             </div>
+             <div style="text-align: center;">
+               <img src="Images/3v.png" alt="SUVcars: style="width: 140px; height: 90px;">
+               <p style="margin: 5px 0 0; font-size: 14px; color: #333;">Medium vans</p>
+             </div>
+             <div style="text-align: center;">
+               <img src="Images/4v.png" alt="Hybridecars: style="width: 140px; height: 90px;" >
+               <p style="margin: 5px 0 0; font-size: 14px; color: #333;">Large vans</p>
+             </div>
+             <div style="text-align: center;">
+              <img src="Images/5v.png" alt="Hybridecars: style="width: 140px; height: 90px;" >
+              <p style="margin: 5px 0 0; font-size: 14px; color: #333;">Crew Vans & 9 Seaters</p>
+            </div>
+           </div>
+           </li>
+          <li><a href="help.html">Help</a></li>
+          <li><a href="more.html">More</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="applynow.html" class="cta-button">Apply Now</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+ <section class="hero" style="background: url('Images/k.avif') center/cover no-repeat; height: 450px; display: flex; align-items: center; justify-content: center;">
+  <div class="hero-text" style="text-align: center; background: rgba(0, 0, 0, 0.4); padding: 40px; border-radius: 12px; color: white; max-width: 800px; width: 100%;">
+  <h1 style="font-size: 42px;">Drive Your Journey</h1>
+  <p style="font-size: 18px;">Choose from reliable, fuel-efficient, and exciting cars.</p>
+
+  <input id="searchInput" type="text" placeholder="Search for a car or van..." 
+    style="margin-top: 20px; padding: 10px; width: 80%; max-width: 500px; border-radius: 6px; border: 1px solid #ccc;">
+
+  <div id="searchResults" style="margin-top: 20px; text-align: center;"></div>
+</div>
+
+
+</section>
+
+  
+
+<main style="font-family: 'Poppins', sans-serif; background-color: #f9f9f9;">
+  <!-- Existing content remains above -->
+
+
+  <!-- Features Section -->
+  <section style="padding: 60px 20px; background: #e9ecef; text-align: center;">
+    <h2>🔧 App Features</h2>
+    <p style="max-width: 600px; margin: 10px auto 30px;">Why users love us — features built for convenience and performance.</p>
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px;">
+      <div style="width: 260px; background: white; border-radius: 10px; padding: 20px; box-shadow: 0 2px 6px rgba(0,0,0,0.05);">
+        <i class="fas fa-mobile-alt" style="font-size: 32px; color: #007bff;"></i>
+        <h3>Mobile Friendly</h3>
+        <p>Book and manage rentals from any device.</p>
+      </div>
+      <div style="width: 260px; background: white; border-radius: 10px; padding: 20px; box-shadow: 0 2px 6px rgba(0,0,0,0.05);">
+        <i class="fas fa-lock" style="font-size: 32px; color: #28a745;"></i>
+        <h3>Secure Checkout</h3>
+        <p>Safe and encrypted payment processing.</p>
+      </div>
+      <div style="width: 260px; background: white; border-radius: 10px; padding: 20px; box-shadow: 0 2px 6px rgba(0,0,0,0.05);">
+        <i class="fas fa-clock" style="font-size: 32px; color: #ffc107;"></i>
+        <h3>24/7 Support</h3>
+        <p>We’re always ready to help you on the road.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Awards/Recognition Section -->
+  <section style="padding: 60px 20px; background: #ffffff; text-align: center;">
+    <h2>🏆 Recognised by the Industry</h2>
+    <p style="max-width: 600px; margin: auto;">Proud to be a trusted choice by thousands of customers and business owners.</p>
+    <div style="margin-top: 30px; display: flex; flex-wrap: wrap; justify-content: center; gap: 40px;">
+      $1$2 animation: fadeIn 2s ease forwards;>
+      $1$2 animation: fadeIn 2.5s ease forwards;>
+      $1$2 animation: fadeIn 3s ease forwards;>
+    </div>
+  </section>
+  <!-- Testimonial Slider Section -->
+  <section style="padding: 60px 20px; background-color: #f0f0f0; text-align: center;">
+    <h2>🗣️ What Our Customers Are Saying</h2>
+    <div style="max-width: 600px; margin: 30px auto;">
+      <div id="testimonial-slider" style="position: relative; overflow: hidden; height: 300px; padding-bottom: 20px;">
+        <div class="slide" style="position: absolute; width: 100%; opacity: 1; transition: opacity 1s;">
+            <img src="Images/R3.jpg" alt="Rachel T." style="width: 90px; height: 90px; border-radius: 50%; margin-bottom: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+            <p style="font-size: 18px;">"I've rented multiple times and every time the service is top-notch. Vehicles are clean, staff is responsive, and booking is seamless."</p>
+          <strong>- Rachel T.</strong><br><div style='margin-top: 8px; font-size: 20px; color: #f1c40f;'>★★★★★</div>
+        </div>
+        <div class="slide" style="position: absolute; width: 100%; opacity: 0; transition: opacity 1s;">
+            <img src="Images/R2.jpg" alt="Mark J." style="width: 90px; height: 90px; border-radius: 50%; margin-bottom: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+            <p style="font-size: 18px;">"Incredible value for money. The app made everything so easy—from selecting the car to payment. 10/10 experience!"</p>
+          <strong>- Mark J.</strong><br><span style='color: #f1c40f; font-size: 20px; display: inline-block; margin-top: 8px;'>★★★★★</span>
+        </div>
+        <div class="slide" style="position: absolute; width: 100%; opacity: 0; transition: opacity 1s;">
+            <img src="Images/R1.jpg" alt="Aisha B." style="width: 90px; height: 90px; border-radius: 50%; margin-bottom: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+            <p style="font-size: 18px;">"Super convenient when I had a last-minute need. Booking was instant and pickup took no time at all!"</p>
+          <strong>- Aisha B.</strong><br><span style='color: #f1c40f;'>★★★★★</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    const slides = document.querySelectorAll('#testimonial-slider .slide');
+    let currentSlide = 0;
+
+    function showNextSlide() {
+      slides[currentSlide].style.opacity = 0;
+      currentSlide = (currentSlide + 1) % slides.length;
+      slides[currentSlide].style.opacity = 1;
+    }
+
+    setInterval(showNextSlide, 4000);
+  </script>
+<style>
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+</style>
+</main>
+
+
+
+
+<footer style="text-align: center; padding: 30px 0; background-color: #222; color: white;">
+  <p>&copy; 2025 CarRental. All rights reserved. | Powered by AJAX & JSON</p>
+</footer>
+ 
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+[
+  {
+    "orderId": "ORD1001",
+    "car": "Toyota Corolla",
+    "name": "Alice Johnson",
+    "email": "alice.johnson@example.com",
+    "phone": "0412345678",
+    "licenseNumber": "NSW1234567",
+    "rentalStart": "2025-05-22",
+    "rentalDays": 3,
+    "totalPrice": 180,
+    "available": false
+  },
+  {
+    "orderId": "ORD1002",
+    "car": "Mazda CX-5",
+    "name": "Brian Lee",
+    "email": "brian.lee@example.com",
+    "phone": "0422222222",
+    "licenseNumber": "VIC7654321",
+    "rentalStart": "2025-05-20",
+    "rentalDays": 5,
+    "totalPrice": 500,
+    "available": false
+  },
+  {
+    "orderId": "ORD1003",
+    "car": "Hyundai i20",
+    "name": "Chloe Kim",
+    "email": "chloe.kim@example.com",
+    "phone": "0433333333",
+    "licenseNumber": "QLD5678123",
+    "rentalStart": "2025-05-18",
+    "rentalDays": 2,
+    "totalPrice": 120,
+    "available": false
+  },
+  {
+    "orderId": "ORD1004",
+    "car": "Ford Ranger",
+    "name": "Daniel Wu",
+    "email": "daniel.wu@example.com",
+    "phone": "0444444444",
+    "licenseNumber": "WA5432167",
+    "rentalStart": "2025-05-25",
+    "rentalDays": 7,
+    "totalPrice": 700,
+    "available": false
+  },
+  {
+    "orderId": "ORD1005",
+    "car": "Tesla Model 3",
+    "name": "Ella Brown",
+    "email": "ella.brown@example.com",
+    "phone": "0455555555",
+    "licenseNumber": "SA3344556",
+    "rentalStart": "2025-05-21",
+    "rentalDays": 4,
+    "totalPrice": 600,
+    "available": false
+  },
+  {
+    "orderId": "ORD1006",
+    "car": "Kia Carnival",
+    "name": "Frank Smith",
+    "email": "frank.smith@example.com",
+    "phone": "0466666666",
+    "licenseNumber": "TAS1231231",
+    "rentalStart": "2025-05-20",
+    "rentalDays": 3,
+    "totalPrice": 450,
+    "available": false
+  },
+  {
+    "orderId": "ORD1007",
+    "car": "Nissan X-Trail",
+    "name": "Grace Tan",
+    "email": "grace.tan@example.com",
+    "phone": "0477777777",
+    "licenseNumber": "ACT4564567",
+    "rentalStart": "2025-05-23",
+    "rentalDays": 2,
+    "totalPrice": 260,
+    "available": false
+  },
+  {
+    "orderId": "ORD1008",
+    "car": "Holden Commodore",
+    "name": "Harry White",
+    "email": "harry.white@example.com",
+    "phone": "0488888888",
+    "licenseNumber": "NT6547890",
+    "rentalStart": "2025-05-19",
+    "rentalDays": 6,
+    "totalPrice": 540,
+    "available": false
+  },
+  {
+    "orderId": "ORD1009",
+    "car": "Volkswagen Golf",
+    "name": "Isabella Green",
+    "email": "isabella.green@example.com",
+    "phone": "0499999999",
+    "licenseNumber": "NSW3322110",
+    "rentalStart": "2025-05-24",
+    "rentalDays": 5,
+    "totalPrice": 375,
+    "available": false
+  },
+  {
+    "orderId": "ORD1010",
+    "car": "Honda CR-V",
+    "name": "Jack Black",
+    "email": "jack.black@example.com",
+    "phone": "0410101010",
+    "licenseNumber": "VIC1029384",
+    "rentalStart": "2025-05-26",
+    "rentalDays": 1,
+    "totalPrice": 130,
+    "available": false
+  }
+]

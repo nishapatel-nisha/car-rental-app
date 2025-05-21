@@ -1,0 +1,112 @@
+<!-- car-rental-app/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Car Rental</title>
+  <link rel="stylesheet" href="css-style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<header>
+    <div class="navbar">
+      <img src="Images/logo.png" alt="Logo" id="logo" onclick="window.location.href='index.html'">
+      <nav class="main-nav">
+      </nav>
+    </div>
+  </header>
+
+<!-- Apply Now Form Section -->
+<section style="margin: 60px auto; max-width: 900px; background: linear-gradient(to bottom, #fff 0%, #f1f1f1 100%); border-radius: 12px; box-shadow: 0 6px 20px rgba(0,0,0,0.06); padding: 40px; font-family: 'Poppins', sans-serif;">
+  <h2 style="text-align: center; color: #007BFF; margin-bottom: 30px;">🚘 Apply to Join Our Rental Platform</h2>
+  <form id="applyForm" style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+    <div>
+      <label>Your Name</label>
+      <input type="text" placeholder="e.g., John Smith" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 6px;">
+    </div>
+    <div>
+      <label>Your Company Name</label>
+      <input type="text" placeholder="e.g., Smith Rentals" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 6px;">
+    </div>
+    <div>
+      <label>Your Email</label>
+      <input type="email" id="emailField" placeholder="example@carrental.com" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 6px;">
+    </div>
+    <div>
+      <label>Your Phone Number</label>
+      <input type="tel" placeholder="+1 234 567 8900" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 6px;">
+    </div>
+    <div>
+      <label>Type of Vehicles</label>
+      <select required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 6px;">
+        <option value="">-- Please choose an option --</option>
+        <option value="Small Cars">Small Cars</option>
+        <option value="SUVs">SUVs</option>
+        <option value="Electric Cars">Electric Cars</option>
+        <option value="Hybrid Cars">Hybrid Cars</option>
+        <option value="Vans">Vans</option>
+      </select>
+    </div>
+    <div>
+      <label>Number of Vehicles</label>
+      <input type="number" placeholder="e.g., 10" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 6px;">
+    </div>
+    <div>
+      <label>Number of Locations</label>
+      <input type="number" placeholder="e.g., 5" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 6px;">
+    </div>
+    <div>
+      <label>Region</label>
+      <select required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 6px;">
+        <option value="">-- Please choose an option --</option>
+        <option value="NSW">NSW</option>
+        <option value="VIC">VIC</option>
+        <option value="QLD">QLD</option>
+        <option value="WA">WA</option>
+        <option value="SA">SA</option>
+        <option value="TAS">TAS</option>
+        <option value="ACT">ACT</option>
+        <option value="NT">NT</option>
+      </select>
+    </div>
+    <div>
+      <label>From Date</label>
+      <input type="date" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 6px;">
+    </div>
+    <div>
+      <label>To Date</label>
+      <input type="date" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 6px;">
+    </div>
+    <div style="grid-column: span 2; text-align: center;">
+      <button type="submit" style="padding: 12px 30px; background: #ffc107; border: none; color: white; font-size: 16px; font-weight: bold; border-radius: 6px; cursor: pointer;">Reservation</button>
+    </div>
+  </form>
+  <div id="submitNotice" style="margin-top: 20px; text-align: center; color: green; font-weight: bold; display: none;">✅ Your reservation has been successfully placed! A confirmation email will be sent shortly.</div>
+</section>
+
+<script>
+  document.getElementById("applyForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+    document.getElementById("submitNotice").style.display = "block";
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+  // Auto-fill vehicle type from URL
+  const params = new URLSearchParams(window.location.search);
+  const selectedCar = params.get("car");
+  const vehicleSelect = document.querySelector('select');
+
+  if (selectedCar && vehicleSelect) {
+    const match = Array.from(vehicleSelect.options).find(option =>
+      option.text.toLowerCase().includes(selectedCar.toLowerCase())
+    );
+
+    if (match) {
+      match.selected = true;
+    } else {
+      const customOption = new Option(selectedCar, selectedCar, true, true);
+      vehicleSelect.add(customOption, vehicleSelect.options[1]);
+    }
+  }
+</script>
